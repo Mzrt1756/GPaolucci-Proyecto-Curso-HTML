@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GPaolucci</title>
 </head>
 <body>
@@ -55,10 +60,10 @@
     <main id="mainServicios">
       <div class="tituloPrincipal">
         <hr>
-        <h2>Servicios y Soluciones</h2>
+        <h2 class="animate__animated animate__fadeInLeft">Servicios y Soluciones</h2>
         <hr>  
       </div>
-      <div class="serviciosTarjetaAceite">
+      <div class="serviciosTarjetaAceite" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/cambioaceite.png" alt="cambiodeaceite">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">General</h2>
@@ -69,7 +74,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaEmbrague">
+      <div class="serviciosTarjetaEmbrague" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/cambioEmbrague.png" alt="cambioEmbrague">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Cambio de Embrague</h2>
@@ -80,7 +85,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaInyectores">
+      <div class="serviciosTarjetaInyectores" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/limpieza-de-inyectores3.png" alt="limpiezainyectores">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Inyección Electrónica</h2>
@@ -90,7 +95,7 @@
           </ul>
        </div>
       </div>
-      <div class="serviciosTarjetaMotores">
+      <div class="serviciosTarjetaMotores" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/reparacion-de-motores.png" alt="reparacion-de-motores">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Reparación de Motores</h2>
@@ -101,7 +106,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaChequeo">
+      <div class="serviciosTarjetaChequeo" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/chequeoelectronicogeneral.png" alt="chequeoelectronicp">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Diagnóstico Computarizado</h2>
@@ -111,7 +116,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaFiltro">
+      <div class="serviciosTarjetaFiltro" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/cambiodefiltro.png" alt="cambiodefiltro">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Tradicional</h2>
@@ -122,7 +127,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaFrenos">
+      <div class="serviciosTarjetaFrenos" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/arreglosFrenos.png" alt="frenos">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Frenos</h2>
@@ -134,7 +139,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaTren">
+      <div class="serviciosTarjetaTren" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/tren-delantero-1.png" alt="trendelantero">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Tren Delantero</h2>
@@ -181,6 +186,9 @@
       <hr>
       <p class="pieFooter_parrafo">©2022 GPaolucci. Todos los derechos reservados. Desarrollado por Facundo Porcel de Peralta.</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
