@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>GPaolucci</title>
+</head>
+<body>
+    <header>
+      <nav id="desplegable">
+        <div class="logoMenu"><a class="logoMenu__link" href="index.html"><img id="logoMenu__link__img" src="img/Logo.png" alt="logo"></a></div>  
+        <div class="desplegable__menu">
+          <button id="desplegable__menu__boton"> <img src="img/menuIcono.png" alt="menuIcono"></button>
+          <ul class="desplegable__menu__lista">
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="index.html">Inicio</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/nosotros.html">El Equipo</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/empresa.html">La Empresa</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/clientes.html">Nuestros Clientes</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/galeria.html">Galería</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/servicios.html">Servicios</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/consejos.html">Consejos</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/contacto.html">Contacto</a></li>
+            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
+          </ul>
+      </nav>
+
+      <nav id="noDesplegable">
+        <ul class="menuLeft">
+          <li class="menuLeft__item"><a class="menuLeft__item__link" href="index.html">Inicio</a></li>
+          <li class="menuLeft__itemRelative"><p class="menuLeft__itemRelative__link">Nosotros</p> 
+            <ul class="ulAbsolute">
+              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/empresa.html">La Empresa</a></li>
+              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/nosotros.html">El Equipo</a></li>
+              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/clientes.html">Nuestros Clientes</a></li>
+              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/galeria.html">Galería</a></li>
+              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/terminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </li>
+          <li class="menuLeft__item"><a class="menuLeft__item__link" href="html/servicios.html">Servicios</a></li>
+        </ul>
+        <div class="logoMenu"><a class="logoMenu__link" href="index.html"><img id="logoMenu__link__img" src="img/Logo.png" alt="logo"></a></div>
+        <ul class="menuRight">  
+          <li class="menuRight__item"><a class="menuRight__item__link" href="html/consejos.html">Consejos</a></li>
+          <li class="menuRight__item"><a class="menuRight__item__link" href="html/contacto.html">Contacto</a></li>
+          <li class="menuRight__item"><a class="menuRight__item__link" href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="slideSection">
+        <a class="slideSection__link" href="html/servicios.html"><img class="slideSection__link__img" src="img/Slide1.png" alt=""></a>
+        <a class="slideSection__link" href="html/servicios.html"><img class="slideSection__link__imgMobile" src="img/Slide1Mobile.png" alt=""></a>
+      </section>
+      <section class="presentacion">
+        <hr>
+        <h2 class="tituloSecundario">Somos un taller mecánico con más de 5 años de experiencia.</h2>
+        <hr>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/6_2_b36-reo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button><a href="html/nosotros.html">¿Quiénes Somos?</a></button>  
+      </section>
+      <section class="serviciosHome">
+        <h2>Servicios</h2>
+        <hr >
+        <div class="serviciosHome__tarjetas">
+          <div class="serviciosHome__tarjetas__card">
+            <img class="serviciosHome_tarjetas__card__img" src="img/Aceite.png" alt="tarjetaServicio1">
+            <h3 class="tituloTerciario">Cambios de Aceite y Filtros</h3>
+          </div>
+          <div class="serviciosHome__tarjetas__card">
+            <img class="serviciosHome_tarjetas__card__img" src="img/Frenos.png" alt="tarjetaServicio2">
+            <h3 class="tituloTerciario">Cambio de Pastillas de Freno</h3>
+          </div>
+          <div class="serviciosHome__tarjetas__card">
+            <img class="serviciosHome_tarjetas__card__img" src="img/Mecanica.png" alt="tarjetaServicio3">
+            <h3 class="tituloTerciario">Mantenimiento Integral</h3>
+          </div>
+          <div class="serviciosHome__tarjetas__card">
+            <img class="serviciosHome_tarjetas__card__img" src="img/Diagnosis.png" alt="tarjetaServicio4">
+            <h3 class="tituloTerciario">Diagnóstico Computarizado</h3>
+          </div>
+          <div class="serviciosHome__tarjetas__card">
+            <img class="serviciosHome_tarjetas__card__img" src="img/Revision.png" alt="tarjetaServicio5">
+            <h3 class="tituloTerciario"> Revisión General</h3>
+          </div>
+          <div class="serviciosHome__tarjetas__card">
+            <img class="serviciosHome_tarjetas__card__img" src="img/Inyeccion.png" alt="tarjetaServicio6">
+            <h3 class="tituloTerciario">Potenciación</h3>
+          </div>
+        </div>
+        <button><a href="html/servicios.html">Conozca Nuestros Servicios</a></button>  
+      </section>
+      <section class="ubicacionHome">
+          <h2>¿Dónde encontrarnos?</h2>
+          <hr>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.7836789013456!2d-58.00016173271613!3d-34.94985512292458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e9f1e03fcabf%3A0x77fd1ffb977087d0!2sGPAOLUCCI-MECANICA!5e0!3m2!1ses-419!2sar!4v1643414774619!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <section class="multimarca">
+        <h2 class="tituloSecundario">Somos un taller multimarca</h2>
+        <hr>
+        <div class="multimarca__text">
+          <p>En <strong>GPaolucci</strong> ofrecemos nuestros servicios a todo tipo de vehículos, tanto de particulares como industriales.
+          Un mantenimiento integral adaptado a todas las marcas y modelos de coches.</p>
+        </div>
+        <div class="marcas">
+            <a class="marcas__link" href="https://www.Bosch.com"><img class="marcas__link__img" src="img/logoBosch.png" alt="logoBosch"></a>
+
+            <a class="marcas__link" href="https://www.chevrolet.com"><img class="marcas__link__img" src="img/logoChevrolet.png" alt="logoChevrolet"></a>
+
+            <a class="marcas__link" href="https://www.continental.com"><img class="marcas__link__img" src="img/logoContinental.png" alt="LogoContinental"></a>
+
+            <a class="marcas__link" href="https://www.instagram.com/c.r.a.repuestos/?hl=es-la"><img class="marcas__link__img" src="img/logoCRA.png" alt="logoCRA"></a>
+
+            <a class="marcas__link" href="https://www.cummins.com"><img class="marcas__link__img" src="img/logoCummins.png" alt="logoCummins"></a>
+
+            <a class="marcas__link" href="https://www.ypf.com"><img class="marcas__link__img" src="img/logoElaion.png" alt="logoElaion"></a>
+
+            <a class="marcas__link" href="https://www.ford.com"><img class="marcas__link__img" src="img/logoFord.png" alt="logoFord"></a>
+
+            <a class="marcas__link" href="https://www.holset.com"><img class="marcas__link__img" src="img/logoHolset.png" alt="logoHolset"></a>
+
+            <a class="marcas__link" href="https://www.mobil.com"><img class="marcas__link__img" src="img/logoMobil.png" alt="logoMobil"></a>
+
+            <a class="marcas__link" href="https://www.motul.com"><img class="marcas__link__img" src="img/logoMotul.png" alt="logoMotul"></a>
+
+            <a class="marcas__link" href="https://www.peugeot.com"><img class="marcas__link__img" src="img/logoPeugeot.png" alt="logoPeugeot"></a>
+
+            <a class="marcas__link" href="https://www.stellantis.com/en"><img class="marcas__link__img" src="img/logoPsa.jpg" alt="logoPSA"></a>
+
+            <a class="marcas__link" href="https://www.schaeffler.com"><img class="marcas__link__img" src="img/logoSchaeffler.png" alt="logoSchaeffler"></a>
+
+            <a class="marcas__link" href="https://www.total.com"><img class="marcas__link__img" src="img/logoTotal.png" alt="logoTotal"></a>
+
+            <a class="marcas__link" href="https://www.toyota.com"><img class="marcas__link__img" src="img/logoToyota.png" alt="logoToyota"></a>
+
+            <a class="marcas__link" href="https://www.Volkswagen.com"><img class="marcas__link__img" src="img/logoVolkswagen.png" alt="logoVolkswagen"></a>
+
+        </div>
+        <button><a href="https://www.mercadolibre.com.ar">Conozca Nuestra Tienda</a></button>          
+      </section>
+    </main>
+    <footer>
+      <div class="footerFlex">
+        <div class="logoFooter"><a class="logoFooter__link" href="index.html"><img id="logoFooter__link__img" src="img/Logo.png" alt="logo"></a></div>
+        <ul class="infoFooter">
+          <li class="infoFooter__item">GPaolucci Soluciones Automotrices S.R.L.</li>
+          <li class="infoFooter__item">43 n°500 e/149 y 150</li>
+          <li class="infoFooter__item">La Plata, Buenos Aires, Argentina</li>
+          <li class="infoFooter__item">Tel: +54 221 436-2305</li>
+          <li class="infoFooter__item">E-mail: gpaolucci@gmail.com</li>
+          <li class="infoFooter__item">Horarios: Lunes a viernes de 9 a 18hs.//Sábados de 9 a 12hs</li>
+        </ul>
+        <ul class="seccionesFooter">
+          <li class="seccionesFooter__item"><a class="seccionesFooter__item__link" href="index.html">Inicio</a></li>
+          <li class="seccionesFooter__item"><a href="html/nosotros.html">Nosotros</a></li>
+          <li class="seccionesFooter__item"><a href="html/empresa.html">La Empresa</a></li>
+          <li class="seccionesFooter__item"><a href="html/clientes.html">Clientes</a></li>
+          <li class="seccionesFooter__item"><a href="html/servicios.html">Servicios</a></li>
+          <li class="seccionesFooter__item"><a href="html/galeria.html">Galería</a></li>
+          <li class="seccionesFooter__item"><a href="html/consejos.html">Consejos</a></li>
+          <li class="seccionesFooter__item"><a href="html/contacto.html">Contacto</a></li>
+          <li class="seccionesFooter__item"><a href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
+          <li class="seccionesFooter__item"><a href="html/terminos.html">Términos y Condiciones</a></li>
+        </ul>
+        <ul class="redesFooter">
+          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="img/whatsapp.png" alt="Logowhatsapp"></a></li>
+          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://www.instagram.com/gpaolucci_solucion_automotriz/?hl=es-la"><img src="img/instagram.png" alt="Logoinstagram"></a></li>
+          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://www.facebook.com/GPaolucci-Mecanica-230450597643866/"><img src="img/facebook.png" alt="Logofacebook"></a></li>
+        </ul>
+     </div>
+      <div class="wappFlotante"><a href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="img/whatsapp64.png" alt="Logowhatsapp"></a></div>
+      <hr>
+      <p class="pieFooter_parrafo">©2022 GPaolucci. Todos los derechos reservados. Desarrollado por Facundo Porcel de Peralta.</p>
+    </footer>
+
+</body>
+</html>

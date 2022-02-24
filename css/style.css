@@ -1,0 +1,1837 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+main {
+  font-family: "Roboto", sans-serif;
+  color: rgba(252, 252, 252, 1);
+  width: 100%;
+}
+
+nav {
+  background-color: rgba(13, 13, 13, 1);
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(13, 13, 13, 1);
+}
+
+h1 {
+  color: rgba(13, 13, 13, 1);
+}
+
+h2 {
+  text-align: center;
+  color: rgba(13, 13, 13, 1);
+}
+
+h3 {
+  text-align: center;
+  color: rgba(13, 13, 13, 1);
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+p,
+.empresaValores__lista {
+  color: rgba(13, 13, 13, 1);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(252, 252, 252, 1);
+  text-transform: uppercase;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+  text-align: left;
+  width: 170px;
+  border: 1px solid rgba(252, 252, 252, 1);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+ul li:hover ul {
+  display: block;
+  background-color: rgba(13, 13, 13, 1);
+}
+
+button {
+  display: block;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(126, 126, 126, 1);
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  box-shadow: 8px 5px 5px rgba(13, 13, 13, 0.5);
+}
+
+.menuLeft__item__link,
+.menuRight__item__link,
+.menuLeft__itemRelative__link {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(252, 252, 252, 1);
+}
+
+.menuLeftRelative__item__hover__link {
+  padding: 5px;
+}
+
+.menuLeft__itemRelative {
+  position: relative;
+  display: inline-block;
+}
+
+.pieFooter_parrafo {
+  font-size: 12px;
+  color: rgba(252, 252, 252, 1);
+  text-align: center;
+}
+
+/*Secciones con color distinto*/
+
+.serviciosHome,
+.multimarca,
+.clientes__tarjeta2,
+.clientes__redes,
+.contacto1,
+.contacto2,
+.empresaHistoria__tarjeta2,
+.consejosUtiles2 {
+  background-color: rgba(237, 238, 239, 1);
+}
+
+/*CSS Flexbox*/
+
+.presentacion,
+.serviciosHome,
+.serviciosHome__tarjetas__card,
+.ubicacionHome,
+.multimarca,
+.marcas__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+.empresaHistoria,
+.empresaValores,
+#mainClientes,
+#mainEquipo,
+#mainConsejos,
+.consejosUtiles,
+#mainGaleria,
+#mainTerminos,
+.terminos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/*CSS CLIENTES.HTML*/
+
+.clientes {
+  width: 100%;
+}
+
+/*CSS NOSOTROS.HTML*/
+
+.tarjetaEquipo__mid {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tarjetaEquipo1:hover .tarjetaEquipo__img,
+.tarjetaEquipo2:hover .tarjetaEquipo__img,
+.tarjetaEquipo3:hover .tarjetaEquipo__img {
+  opacity: 0.8;
+}
+
+.tarjetaEquipo1:hover .tarjetaEquipo__mid,
+.tarjetaEquipo2:hover .tarjetaEquipo__mid,
+.tarjetaEquipo3:hover .tarjetaEquipo__mid {
+  opacity: 1;
+}
+
+.tarjetaEquipo__mid__text {
+  background-color: rgba(237, 238, 239, 1);
+  color: rgba(13, 13, 13, 1);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/*CSS TERMINOS.HTML*/
+
+.terminos {
+  text-align: justify;
+  border: 2px solid rgba(13, 13, 13, 1);
+}
+
+@media screen and (max-width: 768px) {
+  /*CSS General para todas las páginas*/
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  hr {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  p,
+  .empresaValores__lista {
+    font-size: 17px;
+  }
+
+  iframe {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  #logoMenu__link__img,
+  #logoFooter__link__img {
+    height: 35px;
+  }
+
+  #noDesplegable {
+    display: none;
+  }
+
+  #desplegable {
+    padding: 0.7rem;
+  }
+
+  #desplegable,
+  .desplegable__menu,
+  footer,
+  .footerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #desplegable__menu__boton {
+    background-color: rgba(13, 13, 13, 1);
+  }
+
+  .desplegable__menu__lista__item,
+  .desplegable__menu__lista__itemRelative__link {
+    color: rgba(252, 252, 252, 1);
+    font-size: 1rem;
+  }
+
+  .wappFlotante {
+    display: none;
+  }
+
+  footer,
+  .infoFooter,
+  .seccionesFooter,
+  .redesFooter {
+    padding: 0.7rem;
+  }
+
+  footer,
+  .footerFlex {
+    background-color: rgba(13, 13, 13, 1);
+  }
+
+  .redesFooter {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /*CSS INDEX.HTML*/
+
+  .slideSection__link__img {
+    display: none;
+  }
+
+  .slideSection__link__imgMobile {
+    width: 100%;
+  }
+
+  .serviciosHome__tarjetas,
+  .serviciosHome__tarjetas__card {
+    padding: 0px;
+  }
+
+  .serviciosHome__tarjetas__card {
+    padding-bottom: 0.5rem;
+  }
+
+  .serviciosHome_tarjetas__card__img {
+    height: 100px;
+    padding: 0.5rem;
+  }
+
+  .multimarca__text {
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+
+  .marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .marcas__link {
+    width: 50%;
+  }
+
+  .marcas__link__img {
+    width: 80%;
+    padding: 0.5rem;
+  }
+  /*CSS CLIENTES.HTML*/
+
+  .clientes__tarjeta1,
+  .clientes__tarjeta2,
+  .clientes__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .clientes__tarjeta__imagen,
+  .clientes__tarjeta__titulo,
+  .clientes__tarjeta__texto,
+  .clientes__redes__imagenes {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clientes__tarjeta__imagen {
+    height: 200px;
+  }
+
+  .clientes__redes {
+    padding: 0.5rem 0;
+  }
+  .clientes__redes__imagenes {
+    width: 60%;
+  }
+
+  /*CSS CONSEJOS.HTML*/
+
+  .consejosUtiles1,
+  .consejosUtiles2 {
+    padding: 0 0.8rem 0.5rem 0.8rem;
+    text-align: center;
+  }
+
+  .consejosUtiles__titulo {
+    padding: 0.5rem;
+  }
+
+  /*CSS CONSEJOS.HTML*/
+
+  .divContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .contacto1 {
+    background-color: rgba(252, 252, 252, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding-bottom: 0.5rem;
+    height: 495px;
+  }
+
+  .contacto1__texto {
+    padding: 0 0.5rem;
+  }
+
+  .contacto1__redes {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+  }
+
+  .contacto2 {
+    padding: 0.7rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    height: auto;
+  }
+
+  .contacto2,
+  .contacto2 a {
+    color: rgba(13, 13, 13, 1);
+  }
+
+  .contacto2 a {
+    text-decoration: underline;
+  }
+
+  .contacto2__titulo {
+    padding: 0 0.5rem;
+  }
+
+  .columna1 {
+    padding-bottom: 0.5rem;
+  }
+
+  .contacto2__nombre,
+  .contacto2__telefono,
+  .contacto2__mail,
+  .contacto2__mensaje,
+  .contacto2__terminos,
+  .contacto2__inputs {
+    padding: 0.5rem;
+  }
+
+  .contacto2__form {
+    width: 85%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: rgba(126, 126, 126, 1);
+    color: rgba(252, 252, 252, 1);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .ubicacionContacto {
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+
+  /*CSS EMPRESA.HTML*/
+
+  .empresaHistoria {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .empresaHistoria__tarjeta1,
+  .empresaHistoria__tarjeta2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+  }
+
+  .empresaHistoria__tarjeta2 {
+    flex-direction: column;
+  }
+
+  .empresaHistoria__tarjeta1__texto,
+  .empresaHistoria__tarjeta2__texto {
+    padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .empresaHistoria__tarjeta1__img,
+  .empresaHistoria__tarjeta2__img {
+    width: 98%;
+  }
+
+  .empresaValores {
+    width: 80%;
+    padding: 0.5rem 0;
+  }
+
+  /*CSS GALERIA.HTML*/
+
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .galeria {
+    padding-bottom: 0.5rem;
+  }
+  .galeria__box__img {
+    width: 70%;
+    padding: 0.5rem;
+  }
+
+  .galeria__img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.75);
+    border: 2px solid white;
+  }
+
+  /*CSS NOSOTROS.HTML*/
+
+  #mainEquipo,
+  .divEquipo {
+    padding: 0.3rem 0;
+  }
+
+  .divEquipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .equipoTexto {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .tarjetaEquipo1,
+  .tarjetaEquipo2,
+  .tarjetaEquipo3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    width: 70%;
+  }
+
+  .tarjetaEquipo1 {
+    order: 1;
+  }
+
+  .tarjetaEquipo__img {
+    padding: 0.5rem;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .tarjetaEquipo__mid__text {
+    font-size: 17px;
+    padding: 0.5rem 0.5rem;
+  }
+
+  /*CSS TERMINOS.HTML*/
+
+  .terminos {
+    width: auto;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .terminos__titulo {
+    padding: 0.5rem;
+  }
+
+  /*CSS SERVICIOS.HTML*/
+
+  #mainServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "Titulo"
+      "Aceite"
+      "Embrague"
+      "Inyectores"
+      "Motores"
+      "Chequeo"
+      "Filtro"
+      "Frenos"
+      "Tren";
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 1rem;
+    row-gap: 1rem;
+  }
+
+  .serviciosTarjeta__texto__lista {
+    color: rgba(13, 13, 13, 1);
+  }
+
+  .tituloPrincipal {
+    grid-area: Titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviciosTarjetaAceite {
+    grid-area: Aceite;
+  }
+  .serviciosTarjetaEmbrague {
+    grid-area: Embrague;
+  }
+  .serviciosTarjetaInyectores {
+    grid-area: Inyectores;
+  }
+  .serviciosTarjetaMotores {
+    grid-area: Motores;
+  }
+  .serviciosTarjetaChequeo {
+    grid-area: Chequeo;
+  }
+  .serviciosTarjetaFiltro {
+    grid-area: Filtro;
+  }
+  .serviciosTarjetaFrenos {
+    grid-area: Frenos;
+  }
+  .serviciosTarjetaTren {
+    grid-area: Tren;
+  }
+
+  .serviciosTarjetaAceite,
+  .serviciosTarjetaEmbrague,
+  .serviciosTarjetaInyectores,
+  .serviciosTarjetaMotores,
+  .serviciosTarjetaChequeo,
+  .serviciosTarjetaFiltro,
+  .serviciosTarjetaFrenos,
+  .serviciosTarjetaTren {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(13, 13, 13, 0.1);
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .serviciosTarjeta__img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .serviciosTarjeta__texto,
+  .serviciosTarjeta__texto__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .serviciosTarjeta__texto__lista__item {
+    font-size: 17px;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*CSS General para todas las páginas*/
+
+  h1 {
+    font-size: 35px;
+    padding-left: 1.2px;
+    padding-top: 0.5px;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding: 0.3rem;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding: 0.5rem;
+  }
+
+  hr {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  p,
+  .empresaValores__lista {
+    font-size: 22px;
+  }
+
+  .wappFlotante {
+    display: none;
+  }
+
+  #desplegable {
+    display: none;
+  }
+
+  #noDesplegable,
+  .menuLeft,
+  .menuRight {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #logoMenu__link__img {
+    height: 35px;
+    padding: 0.5rem 0;
+  }
+
+  .menuLeft__item__link,
+  .menuRight__item__link,
+  .menuLeft__itemRelative__link {
+    font-size: 17px;
+  }
+
+  #logoFooter__link__img {
+    height: 45px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footerFlex {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2/3fr;
+    grid-template-rows: 50px 150px;
+    grid-template-areas:
+      "logo lista redes"
+      "info lista redes";
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logoFooter {
+    grid-area: logo;
+    text-align: left;
+  }
+
+  .infoFooter {
+    grid-area: info;
+    text-align: left;
+  }
+
+  .seccionesFooter {
+    grid-area: lista;
+    text-align: center;
+  }
+
+  .redesFooter {
+    grid-area: redes;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    justify-content: space-evenly;
+  }
+
+  /*CSS para HOME*/
+  .slideSection__link__imgMobile {
+    display: none;
+  }
+  .slideSection__link__img {
+    width: 100%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 400px;
+    padding-bottom: 1.2rem;
+  }
+
+  .serviciosHome__tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 13rem 13rem;
+  }
+
+  .serviciosHome_tarjetas__card__img {
+    height: 100px;
+  }
+
+  .marcas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .marcas__link {
+    width: 30%;
+  }
+
+  .marcas__link__img {
+    width: 50%;
+  }
+
+  /*CSS CLIENTES.HTML*/
+
+  .clientes__tarjeta1,
+  .clientes__tarjeta2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.7rem;
+  }
+
+  .clientes__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem 0;
+  }
+
+  .clientes__tarjeta2 {
+    flex-direction: row-reverse;
+  }
+
+  .clientes__tarjeta1 {
+    text-align: right;
+  }
+
+  .clientes__tarjeta__titulo {
+    width: 30%;
+  }
+
+  .clientes__tarjeta__imagen {
+    height: 250px;
+  }
+
+  .clientes__redes__imagenes {
+    width: 40%;
+    padding: 0.5rem;
+  }
+
+  /*CSS CONSEJOS.HTML*/
+
+  .consejosUtiles1,
+  .consejosUtiles2 {
+    padding: 0 1rem 0.7rem 1rem;
+    text-align: center;
+  }
+
+  .consejosUtiles__titulo {
+    font-size: 22px;
+  }
+
+  /*CSS CONSEJOS.HTML*/
+
+  .divContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(500px, auto) 450px;
+    grid-template-areas:
+      "contacto1 contacto2"
+      "ubicacion ubicacion";
+    padding: 0.7rem 0;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .contacto1,
+  .contacto2 {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto1 {
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+  }
+
+  .contacto1__redes {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contacto2 {
+    border-radius: 5px;
+  }
+
+  .contacto2,
+  .contacto2 a {
+    color: rgba(13, 13, 13, 1);
+  }
+
+  .contacto2 a {
+    text-decoration: underline;
+  }
+
+  .contacto2__titulo {
+    padding-top: 0.5rem;
+  }
+
+  .columna1 {
+    padding-bottom: 0.5rem;
+  }
+
+  .contacto2__nombre,
+  .contacto2__telefono,
+  .contacto2__mail,
+  .contacto2__mensaje,
+  .contacto2__terminos,
+  .contacto2__inputs {
+    padding: 0.5rem;
+  }
+
+  .contacto2__form {
+    width: 90%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: rgba(126, 126, 126, 1);
+    color: rgba(252, 252, 252, 1);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0.2rem;
+  }
+
+  .ubicacionContacto {
+    grid-area: ubicacion;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ubicacionContacto iframe {
+    width: 100%;
+    padding: 0;
+  }
+
+  /*CSS EMPRESA.HTML*/
+
+  .empresaHistoria__tarjeta1,
+  .empresaHistoria__tarjeta2 {
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .empresaHistoria__tarjeta1 {
+    text-align: left;
+  }
+  .empresaHistoria__tarjeta2 {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  .empresaHistoria__tarjeta1__texto,
+  .empresaHistoria__tarjeta2__texto {
+    font-size: 20px;
+    padding: 0.7rem;
+  }
+
+  .empresaHistoria__tarjeta1__img,
+  .empresaHistoria__tarjeta2__img {
+    height: 300px;
+  }
+
+  .empresaHistoria__tarjeta1__img {
+    padding-right: 0.7rem;
+  }
+
+  .empresaHistoria__tarjeta2__img {
+    padding-left: 0.7rem;
+  }
+
+  .empresaValores {
+    width: 80%;
+    text-align: center;
+    padding: 0.7rem 0;
+  }
+
+  /*CSS NOSOTROS.HTML*/
+
+  .divEquipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 350px;
+  }
+
+  #mainEquipo,
+  .divEquipo {
+    padding-bottom: 0.7rem;
+  }
+
+  .equipoTexto {
+    text-align: center;
+    padding: 0 5rem 1rem 5rem;
+  }
+
+  .tarjetaEquipo1,
+  .tarjetaEquipo2,
+  .tarjetaEquipo3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    width: 50%;
+  }
+
+  .tarjetaEquipo__img {
+    padding: 0.5rem;
+    opacity: 1;
+    display: block;
+    width: 90%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .tarjetaEquipo__mid__text {
+    font-size: 20px;
+    padding: 0.7rem 0.7rem;
+  }
+
+  /*CSS GALERIA.HTML*/
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px;
+    grid-template-areas:
+      "1 2 3"
+      "4 5 6"
+      "7 8 9"
+      "10 11 12"
+      "13 14 15"
+      "16 17 18"
+      "19 20 21";
+    align-items: center;
+    justify-items: center;
+  }
+  .galeria__box__img {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    transition: transform 0.2s;
+    border-radius: 5px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.75);
+  }
+
+  .galeria__img:hover {
+    transform: scale(1.1);
+  }
+
+  /*CSS SERVICIOS.HTML*/
+
+  #mainServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px auto auto auto;
+    grid-template-areas:
+      "Titulo Titulo Titulo"
+      "Aceite Embrague Inyectores"
+      "Motores Chequeo Filtro"
+      "Frenos Tren .";
+    align-items: center;
+    justify-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    row-gap: 1.2rem;
+  }
+
+  .serviciosTarjeta__texto__lista {
+    color: rgba(13, 13, 13, 1);
+  }
+
+  .tituloPrincipal {
+    grid-area: Titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviciosTarjetaAceite {
+    grid-area: Aceite;
+  }
+  .serviciosTarjetaEmbrague {
+    grid-area: Embrague;
+  }
+  .serviciosTarjetaInyectores {
+    grid-area: Inyectores;
+  }
+  .serviciosTarjetaMotores {
+    grid-area: Motores;
+  }
+  .serviciosTarjetaChequeo {
+    grid-area: Chequeo;
+  }
+  .serviciosTarjetaFiltro {
+    grid-area: Filtro;
+  }
+  .serviciosTarjetaFrenos {
+    grid-area: Frenos;
+  }
+  .serviciosTarjetaTren {
+    grid-area: Tren;
+  }
+
+  .serviciosTarjetaAceite,
+  .serviciosTarjetaEmbrague,
+  .serviciosTarjetaInyectores,
+  .serviciosTarjetaMotores,
+  .serviciosTarjetaChequeo,
+  .serviciosTarjetaFiltro,
+  .serviciosTarjetaFrenos,
+  .serviciosTarjetaTren {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(13, 13, 13, 0.1);
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .serviciosTarjeta__img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .serviciosTarjeta__texto {
+    padding: 0.5rem;
+  }
+
+  .serviciosTarjeta__texto__titulo {
+    font-size: 25px;
+  }
+
+  .serviciosTarjeta__texto,
+  .serviciosTarjeta__texto__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .serviciosTarjeta__texto__lista__item {
+    font-size: 17px;
+    padding: 0.3rem;
+  }
+
+  /*CSS TERMINOS.HTML*/
+
+  .terminos {
+    width: auto;
+    margin: 0.7rem;
+    padding: 0.7rem;
+  }
+  .terminos__titulo {
+    padding: 0 0.7rem 0.7rem 0.7rem;
+  }
+  .terminos__texto {
+    padding-bottom: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*CSS General para todas las páginas*/
+
+  h1 {
+    font-size: 40px;
+    padding-left: 1.5px;
+    padding-top: 0.7px;
+  }
+
+  h2 {
+    font-size: 35px;
+    padding: 0.5rem;
+  }
+
+  h3 {
+    font-size: 30px;
+    padding: 0.7rem;
+  }
+
+  hr {
+    width: 80%;
+    margin: 0.7rem 0;
+  }
+
+  p,
+  .empresaValores__lista {
+    font-size: 25px;
+  }
+
+  button {
+    padding: 0.7rem;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+  }
+
+  .wappFlotante {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+  }
+
+  #desplegable {
+    display: none;
+  }
+
+  #noDesplegable,
+  .menuLeft,
+  .menuRight {
+    padding: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #logoMenu__link__img {
+    height: 35px;
+  }
+
+  .menuLeft__item__link,
+  .menuRight__item__link,
+  .menuLeft__itemRelative__link {
+    font-size: 25px;
+  }
+
+  #logoFooter__link__img {
+    height: 70px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footerFlex {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.3fr 1fr 0.2fr;
+    grid-template-rows: 200px;
+    grid-template-areas: "logo info lista redes";
+    column-gap: 0.7rem;
+    align-items: center;
+  }
+
+  .logoFooter {
+    grid-area: logo;
+    text-align: left;
+  }
+
+  .infoFooter {
+    grid-area: info;
+    text-align: left;
+  }
+
+  .infoFooter__item {
+    padding: 0.3rem;
+  }
+
+  .seccionesFooter {
+    grid-area: lista;
+    text-align: center;
+  }
+
+  .seccionesFooter__item {
+    padding: 0.05rem;
+  }
+
+  .redesFooter {
+    grid-area: redes;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  /*CSS para HOME*/
+  .slideSection__link__imgMobile {
+    display: none;
+  }
+  .slideSection__link__img {
+    width: 100%;
+  }
+
+  .presentacion,
+  .serviciosHome,
+  .serviciosHome__tarjetas__card,
+  .ubicacionHome,
+  .multimarca,
+  .marcas__link {
+    padding: 1.2rem;
+  }
+
+  iframe {
+    width: 70%;
+    height: 600px;
+    padding: 1.2rem 0;
+  }
+
+  .serviciosHome__tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 13rem 13rem;
+  }
+
+  .serviciosHome_tarjetas__card__img {
+    height: 100px;
+  }
+
+  .marcas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .marcas__link {
+    width: 20%;
+  }
+
+  .marcas__link__img {
+    width: 50%;
+  }
+
+  /*CSS CLIENTES.HTML*/
+
+  .clientes {
+    width: 100%;
+  }
+
+  .clientes__tarjeta1,
+  .clientes__tarjeta2,
+  .clientes__tarjeta__imagen,
+  .clientes__tarjeta__titulo,
+  .clientes__tarjeta__texto,
+  .clientes__redes,
+  .clientes__redes__imagenes {
+    padding: 1rem;
+  }
+
+  .clientes__tarjeta__titulo {
+    width: 25%;
+  }
+
+  .clientes__tarjeta__texto {
+    width: 55%;
+    font-size: 27px;
+  }
+
+  .clientes__tarjeta1,
+  .clientes__tarjeta2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: end;
+  }
+
+  .clientes__tarjeta2 {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .clientes__tarjeta__imagen {
+    height: 300px;
+  }
+
+  .clientes__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clientes__redes__imagenes {
+    width: 30%;
+  }
+
+  /*CSS CONSEJOS.HTML*/
+
+  .consejosUtiles1,
+  .consejosUtiles2 {
+    padding: 0 1.5rem 1rem 1.5rem;
+    text-align: center;
+  }
+
+  .consejosUtiles__titulo {
+    font-size: 25px;
+  }
+
+  /*CSS CONTACTO.HTML*/
+
+  .divContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(600px, auto) 570px;
+    grid-template-areas:
+      "contacto1 contacto2"
+      "ubicacion ubicacion";
+    padding: 1.2rem 0;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .contacto1,
+  .contacto2 {
+    width: 90%;
+    height: 100%;
+    padding: 0 1rem;
+    border-radius: 5px;
+  }
+
+  .contacto1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .contacto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto1__redes {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contacto2,
+  .contacto2 a {
+    color: rgba(13, 13, 13, 1);
+  }
+
+  .contacto2 a {
+    text-decoration: underline;
+  }
+
+  .contacto2__titulo {
+    font-size: 28px;
+    padding-top: 1rem;
+  }
+
+  .columna1 {
+    width: 25%;
+  }
+
+  .columna2 {
+    padding: 0.7rem;
+    width: 75%;
+  }
+
+  .contacto2__nombre,
+  .contacto2__telefono,
+  .contacto2__mail,
+  .contacto2__mensaje,
+  .contacto2__terminos,
+  .contacto2__inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contacto2__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 50px;
+  }
+
+  textarea {
+    height: 135px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: rgba(126, 126, 126, 1);
+    color: rgba(252, 252, 252, 1);
+    font-size: 16px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0.2rem;
+  }
+
+  .contacto2__terminos {
+    padding: 1rem;
+  }
+
+  .contacto2__terminos label {
+    padding-left: 1rem;
+  }
+
+  .contacto2__inputs {
+    width: 50%;
+    align-self: center;
+    justify-content: space-between;
+  }
+
+  .ubicacionContacto {
+    grid-area: ubicacion;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ubicacionContacto iframe {
+    width: 100%;
+    height: 500px;
+    padding: 0;
+  }
+
+  /*CSS EMPRESA.HTML*/
+
+  .empresaHistoria__tarjeta1,
+  .empresaHistoria__tarjeta2 {
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .empresaHistoria__tarjeta1 {
+    text-align: left;
+  }
+  .empresaHistoria__tarjeta2 {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  .empresaHistoria__tarjeta1__texto,
+  .empresaHistoria__tarjeta2__texto {
+    padding: 1rem;
+  }
+
+  .empresaHistoria__tarjeta1__img,
+  .empresaHistoria__tarjeta2__img {
+    height: 450px;
+  }
+
+  .empresaHistoria__tarjeta1__img {
+    padding-right: 1rem;
+  }
+
+  .empresaHistoria__tarjeta2__img {
+    padding-left: 1rem;
+  }
+
+  .empresaValores {
+    width: 80%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  /*CSS NOSOTROS.HTML*/
+
+  .divEquipo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #mainEquipo,
+  .divEquipo {
+    padding-bottom: 1rem;
+  }
+
+  .equipoTexto {
+    text-align: center;
+    padding: 0 1.2rem;
+  }
+
+  .tarjetaEquipo1,
+  .tarjetaEquipo2,
+  .tarjetaEquipo3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .tarjetaEquipo__img {
+    padding: 1rem;
+    opacity: 1;
+    display: block;
+    width: 70%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .tarjetaEquipo__mid__text {
+    font-size: 22px;
+    padding: 1rem 1rem;
+  }
+
+  /*CSS GALERIA.HTML*/
+
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px 500px 500px;
+    grid-template-areas:
+      "1 2 3 4"
+      "5 6 7 8"
+      "9 10 11 12"
+      "13 14 15 16"
+      "17 18 19 20";
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galeria__box__img {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    transition: transform 0.2s;
+    border-radius: 5px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.75);
+  }
+
+  .galeria__img:hover {
+    transform: scale(1.1);
+  }
+
+  /*CSS SERVICIOS.HTML*/
+
+  #mainServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px auto auto auto;
+    grid-template-areas:
+      "Titulo Titulo Titulo Titulo"
+      "Aceite Embrague Inyectores Motores"
+      "Chequeo Filtro Frenos Tren";
+    align-items: center;
+    justify-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    row-gap: 1.5rem;
+  }
+
+  .serviciosTarjeta__texto__lista {
+    color: rgba(13, 13, 13, 1);
+  }
+
+  .tituloPrincipal {
+    grid-area: Titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviciosTarjetaAceite {
+    grid-area: Aceite;
+  }
+  .serviciosTarjetaEmbrague {
+    grid-area: Embrague;
+  }
+  .serviciosTarjetaInyectores {
+    grid-area: Inyectores;
+  }
+  .serviciosTarjetaMotores {
+    grid-area: Motores;
+  }
+  .serviciosTarjetaChequeo {
+    grid-area: Chequeo;
+  }
+  .serviciosTarjetaFiltro {
+    grid-area: Filtro;
+  }
+  .serviciosTarjetaFrenos {
+    grid-area: Frenos;
+  }
+  .serviciosTarjetaTren {
+    grid-area: Tren;
+  }
+
+  .serviciosTarjetaAceite,
+  .serviciosTarjetaEmbrague,
+  .serviciosTarjetaInyectores,
+  .serviciosTarjetaMotores,
+  .serviciosTarjetaChequeo,
+  .serviciosTarjetaFiltro,
+  .serviciosTarjetaFrenos,
+  .serviciosTarjetaTren {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(13, 13, 13, 0.1);
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .serviciosTarjeta__img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .serviciosTarjeta__texto {
+    padding: 0.5rem;
+  }
+
+  .serviciosTarjeta__texto__titulo {
+    font-size: 25px;
+    padding: 0;
+  }
+
+  .serviciosTarjeta__texto,
+  .serviciosTarjeta__texto__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .serviciosTarjeta__texto__lista__item {
+    font-size: 17px;
+    padding: 0.3rem;
+  }
+
+  /*CSS TERMINOS.HTML*/
+
+  .terminos {
+    width: auto;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .terminos__titulo {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .terminos__texto {
+    padding-bottom: 1rem;
+  }
+}
