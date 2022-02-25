@@ -6,7 +6,6 @@
 body,
 main {
   font-family: "Roboto", sans-serif;
-  color: rgba(252, 252, 252, 1);
   width: 100%;
 }
 
@@ -70,6 +69,7 @@ ul ul li {
 ul li:hover ul {
   display: block;
   background-color: rgba(13, 13, 13, 1);
+  z-index: 1;
 }
 
 button {
@@ -104,6 +104,10 @@ button {
   display: inline-block;
 }
 
+.infoFooter {
+  color: rgba(252, 252, 252, 1);
+}
+
 .pieFooter_parrafo {
   font-size: 12px;
   color: rgba(252, 252, 252, 1);
@@ -120,7 +124,12 @@ button {
 .contacto2,
 .empresaHistoria__tarjeta2,
 .consejosUtiles2 {
-  background-color: rgba(237, 238, 239, 1);
+  background: rgb(213, 228, 228);
+  background: radial-gradient(
+    circle,
+    rgba(213, 228, 228, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 /*CSS Flexbox*/
