@@ -9,179 +9,148 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <title>GPaolucci</title>
 </head>
 <body>
-    <header>
-      <nav id="desplegable">
-        <div class="logoMenu"><a class="logoMenu__link" href="index.html"><img id="logoMenu__link__img" src="img/Logo.png" alt="logo"></a></div>  
-        <div class="desplegable__menu">
-          <button id="desplegable__menu__boton"> <img src="img/menuIcono.png" alt="menuIcono"></button>
-          <ul class="desplegable__menu__lista">
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="index.html">Inicio</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/nosotros.html">El Equipo</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/empresa.html">La Empresa</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/clientes.html">Nuestros Clientes</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/galeria.html">Galería</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/servicios.html">Servicios</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/consejos.html">Consejos</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="html/contacto.html">Contacto</a></li>
-            <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
-          </ul>
-      </nav>
-
-      <nav id="noDesplegable">
-        <ul class="menuLeft">
-          <li class="menuLeft__item"><a class="menuLeft__item__link" href="index.html">Inicio</a></li>
-          <li class="menuLeft__itemRelative"><p class="menuLeft__itemRelative__link">Nosotros</p> 
-            <ul class="ulAbsolute">
-              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/empresa.html">La Empresa</a></li>
-              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/nosotros.html">El Equipo</a></li>
-              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/clientes.html">Nuestros Clientes</a></li>
-              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/galeria.html">Galería</a></li>
-              <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="html/terminos.html">Términos y Condiciones</a></li>
+   <header>
+      <nav id="noDesplegable" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  NOSOTROS
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="html/empresa.html">La Empresa</a></li>
+                  <li><a class="dropdown-item" href="html/nosotros.html">El Equipo</a></li>
+                  <li><a class="dropdown-item" href="html/clientes.html">Nuestros Clientes</a></li>
+                  <li><a class="dropdown-item" href="html/galeria.html">Galería</a></li>
+                  <li><a class="dropdown-item" href="html/terminos.html">Términos y Condiciones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="html/servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/Logo.png" alt="" width="250" height="45">
+              </a>
+              <li class="nav-item">
+                <a class="nav-link active" href="html/consejos.html">CONSEJOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="html/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.mercadolibre.com.ar/#from=homecom">TIENDA</a>
+              </li>
             </ul>
-          </li>
-          <li class="menuLeft__item"><a class="menuLeft__item__link" href="html/servicios.html">Servicios</a></li>
-        </ul>
-        <div class="logoMenu"><a class="logoMenu__link" href="index.html"><img id="logoMenu__link__img" src="img/Logo.png" alt="logo"></a></div>
-        <ul class="menuRight">  
-          <li class="menuRight__item"><a class="menuRight__item__link" href="html/consejos.html">Consejos</a></li>
-          <li class="menuRight__item"><a class="menuRight__item__link" href="html/contacto.html">Contacto</a></li>
-          <li class="menuRight__item"><a class="menuRight__item__link" href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
-    </header>
-    <main>
-      <section class="slideSection">
-        <a class="slideSection__link" href="html/servicios.html"><img class="slideSection__link__img" src="img/Slide1.png" alt=""></a>
-        <a class="slideSection__link" href="html/servicios.html"><img class="slideSection__link__imgMobile" src="img/Slide1Mobile.png" alt=""></a>
-      </section>
-      <section class="presentacion">
-        <hr>
-        <h2 class="tituloSecundario animate__animated animate__fadeInLeft" >Somos un taller mecánico con más de 5 años de experiencia.</h2>
-        <hr>
-        <iframe width="100%" height="300" src="https://www.youtube.com/embed/6_2_b36-reo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <button><a href="html/nosotros.html">¿Quiénes Somos?</a></button>  
-      </section>
-      <section class="serviciosHome">
-        <h2>Servicios</h2>
-        <hr >
-        <div class="serviciosHome__tarjetas" data-aos="zoom-in">
-          <div class="serviciosHome__tarjetas__card">
-            <img class="serviciosHome_tarjetas__card__img" src="img/Aceite.png" alt="tarjetaServicio1">
-            <h3 class="tituloTerciario">Cambios de Aceite y Filtros</h3>
+   </header>
+    <section id="slider">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="html/empresa.html"><img src="img/Slide1.png" class="d-block w-100" alt="..."></a>
           </div>
-          <div class="serviciosHome__tarjetas__card" data-aos="zoom-in">
-            <img class="serviciosHome_tarjetas__card__img" src="img/Frenos.png" alt="tarjetaServicio2">
-            <h3 class="tituloTerciario">Cambio de Pastillas de Freno</h3>
+          <div class="carousel-item">
+            <a href="html/servicios.html"><img src="img/Slide2.png" class="d-block w-100" alt="..."></a>
           </div>
-          <div class="serviciosHome__tarjetas__card" data-aos="zoom-in">
-            <img class="serviciosHome_tarjetas__card__img" src="img/Mecanica.png" alt="tarjetaServicio3">
-            <h3 class="tituloTerciario">Mantenimiento Integral</h3>
-          </div>
-          <div class="serviciosHome__tarjetas__card" data-aos="zoom-in">
-            <img class="serviciosHome_tarjetas__card__img" src="img/Diagnosis.png" alt="tarjetaServicio4">
-            <h3 class="tituloTerciario">Diagnóstico Computarizado</h3>
-          </div>
-          <div class="serviciosHome__tarjetas__card" data-aos="zoom-in">
-            <img class="serviciosHome_tarjetas__card__img" src="img/Revision.png" alt="tarjetaServicio5">
-            <h3 class="tituloTerciario"> Revisión General</h3>
-          </div>
-          <div class="serviciosHome__tarjetas__card" data-aos="zoom-in">
-            <img class="serviciosHome_tarjetas__card__img" src="img/Inyeccion.png" alt="tarjetaServicio6">
-            <h3 class="tituloTerciario">Potenciación</h3>
+          <div class="carousel-item">
+            <a href="html/contacto.html"><img src="img/Slide3.png" class="d-block w-100" alt="..."></a>
           </div>
         </div>
-        <button><a href="html/servicios.html">Conozca Nuestros Servicios</a></button>  
-      </section>
-      <section class="ubicacionHome">
-          <h2>¿Dónde encontrarnos?</h2>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+    <section id="presentacion" class="text-center container">      
           <hr>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.7836789013456!2d-58.00016173271613!3d-34.94985512292458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e9f1e03fcabf%3A0x77fd1ffb977087d0!2sGPAOLUCCI-MECANICA!5e0!3m2!1ses-419!2sar!4v1643414774619!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </section>
-      <section class="multimarca">
-        <h2 class="tituloSecundario">Somos un taller multimarca</h2>
+          <h1>Somos un taller mecánico con más de 5 años de experiencia.</h1>
+          <hr>
+          <div class="row mb-3 ratio ratio-16x9" >
+            <iframe src="https://www.youtube.com/embed/6_2_b36-reo" title="YouTube video" allowfullscreen></iframe>
+          </div>
+          <div class="row-xs"> 
+            <a href="html/nosotros.html" class="btn btn-secondary mb-3">¿QUIÉNES SOMOS?</a>
+          </div>
+    </section>
+    <section id="servicios" class="text-center container-fluid">
+      <div class="container py-lg-3">
+        <h2>Servicios</h2>
         <hr>
-        <div class="multimarca__text">
-          <p>En <strong>GPaolucci</strong> ofrecemos nuestros servicios a todo tipo de vehículos, tanto de particulares como industriales.
-          Un mantenimiento integral adaptado a todas las marcas y modelos de coches.</p>
+      </div>
+      <div class="container py-lg-3">
+        <div class="col-md-4">
+          <img class="img-fluid" src="img/Aceite.png" alt="tarjetaServicio1">
+          <h3>Cambios de Aceite y Filtros</h3>
         </div>
-        <div class="marcas" >
-            <a class="marcas__link" href="https://www.Bosch.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoBosch.png" alt="logoBosch"></a>
-
-            <a class="marcas__link" href="https://www.chevrolet.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoChevrolet.png" alt="logoChevrolet"></a>
-
-            <a class="marcas__link" href="https://www.continental.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoContinental.png" alt="LogoContinental"></a>
-
-            <a class="marcas__link" href="https://www.instagram.com/c.r.a.repuestos/?hl=es-la" data-aos="flip-up"><img class="marcas__link__img" src="img/logoCRA.png" alt="logoCRA"></a>
-
-            <a class="marcas__link" href="https://www.cummins.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoCummins.png" alt="logoCummins"></a>
-
-            <a class="marcas__link" href="https://www.ypf.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoElaion.png" alt="logoElaion"></a>
-
-            <a class="marcas__link" href="https://www.ford.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoFord.png" alt="logoFord"></a>
-
-            <a class="marcas__link" href="https://www.holset.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoHolset.png" alt="logoHolset"></a>
-
-            <a class="marcas__link" href="https://www.mobil.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoMobil.png" alt="logoMobil"></a>
-
-            <a class="marcas__link" href="https://www.motul.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoMotul.png" alt="logoMotul"></a>
-
-            <a class="marcas__link" href="https://www.peugeot.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoPeugeot.png" alt="logoPeugeot"></a>
-
-            <a class="marcas__link" href="https://www.stellantis.com/en" data-aos="flip-up"><img class="marcas__link__img" src="img/logoPsa.jpg" alt="logoPSA"></a>
-
-            <a class="marcas__link" href="https://www.schaeffler.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoSchaeffler.png" alt="logoSchaeffler"></a>
-
-            <a class="marcas__link" href="https://www.total.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoTotal.png" alt="logoTotal"></a>
-
-            <a class="marcas__link" href="https://www.toyota.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoToyota.png" alt="logoToyota"></a>
-
-            <a class="marcas__link" href="https://www.Volkswagen.com" data-aos="flip-up"><img class="marcas__link__img" src="img/logoVolkswagen.png" alt="logoVolkswagen"></a>
-
+        <div class="col-md-4">
+          <img class="img-fluid" src="img/Aceite.png" alt="tarjetaServicio1">
+          <h3>Cambios de Aceite y Filtros</h3>
         </div>
-        <button><a href="https://www.mercadolibre.com.ar">Conozca Nuestra Tienda</a></button>          
-      </section>
-    </main>
-    <footer>
-      <div class="footerFlex">
-        <div class="logoFooter"><a class="logoFooter__link" href="index.html"><img id="logoFooter__link__img" src="img/Logo.png" alt="logo"></a></div>
-        <ul class="infoFooter">
-          <li class="infoFooter__item">GPaolucci Soluciones Automotrices S.R.L.</li>
-          <li class="infoFooter__item">43 n°500 e/149 y 150</li>
-          <li class="infoFooter__item">La Plata, Buenos Aires, Argentina</li>
-          <li class="infoFooter__item">Tel: +54 221 436-2305</li>
-          <li class="infoFooter__item">E-mail: gpaolucci@gmail.com</li>
-          <li class="infoFooter__item">Horarios: Lunes a viernes de 9 a 18hs.//Sábados de 9 a 12hs</li>
-        </ul>
-        <ul class="seccionesFooter">
-          <li class="seccionesFooter__item"><a class="seccionesFooter__item__link" href="index.html">Inicio</a></li>
-          <li class="seccionesFooter__item"><a href="html/nosotros.html">Nosotros</a></li>
-          <li class="seccionesFooter__item"><a href="html/empresa.html">La Empresa</a></li>
-          <li class="seccionesFooter__item"><a href="html/clientes.html">Clientes</a></li>
-          <li class="seccionesFooter__item"><a href="html/servicios.html">Servicios</a></li>
-          <li class="seccionesFooter__item"><a href="html/galeria.html">Galería</a></li>
-          <li class="seccionesFooter__item"><a href="html/consejos.html">Consejos</a></li>
-          <li class="seccionesFooter__item"><a href="html/contacto.html">Contacto</a></li>
-          <li class="seccionesFooter__item"><a href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
-          <li class="seccionesFooter__item"><a href="html/terminos.html">Términos y Condiciones</a></li>
-        </ul>
-        <ul class="redesFooter">
-          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="img/whatsapp.png" alt="Logowhatsapp"></a></li>
-          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://www.instagram.com/gpaolucci_solucion_automotriz/?hl=es-la"><img src="img/instagram.png" alt="Logoinstagram"></a></li>
-          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://www.facebook.com/GPaolucci-Mecanica-230450597643866/"><img src="img/facebook.png" alt="Logofacebook"></a></li>
-        </ul>
-     </div>
-      <div class="wappFlotante"><a href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="img/whatsapp64.png" alt="Logowhatsapp"></a></div>
-      <hr>
-      <p class="pieFooter_parrafo">©2022 GPaolucci. Todos los derechos reservados. Desarrollado por Facundo Porcel de Peralta.</p>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+        <div class="col-md-4">
+          <img class="img-fluid" src="img/Aceite.png" alt="tarjetaServicio1">
+          <h3>Cambios de Aceite y Filtros</h3>
+        </div>
+      </div>
+      <div class="container py-lg-3">
+
+      </div>
+      <div class="container py-lg-3">
+        <a href="html/servicios.html" class="btn btn-secondary mb-3">CONOZCA NUESTROS SERVICIOS</a>
+      </div>
+
+    </section>
+
+    <div class="serviciosHome__tarjetas">
+      <div class="serviciosHome__tarjetas__card">
+        <img class="img-fluid" src="img/Aceite.png" alt="tarjetaServicio1">
+        <h3>Cambios de Aceite y Filtros</h3>
+      </div>
+      <div class="serviciosHome__tarjetas__card">
+        <img class="serviciosHome_tarjetas__card__img" src="img/Frenos.png" alt="tarjetaServicio2">
+        <h3 class="tituloTerciario">Cambio de Pastillas de Freno</h3>
+      </div>
+      <div class="serviciosHome__tarjetas__card">
+        <img class="serviciosHome_tarjetas__card__img" src="img/Mecanica.png" alt="tarjetaServicio3">
+        <h3 class="tituloTerciario">Mantenimiento Integral</h3>
+      </div>
+      <div class="serviciosHome__tarjetas__card">
+        <img class="serviciosHome_tarjetas__card__img" src="img/Diagnosis.png" alt="tarjetaServicio4">
+        <h3 class="tituloTerciario">Diagnóstico Computarizado</h3>
+      </div>
+      <div class="serviciosHome__tarjetas__card">
+        <img class="serviciosHome_tarjetas__card__img" src="img/Revision.png" alt="tarjetaServicio5">
+        <h3 class="tituloTerciario"> Revisión General</h3>
+      </div>
+      <div class="serviciosHome__tarjetas__card">
+        <img class="serviciosHome_tarjetas__card__img" src="img/Inyeccion.png" alt="tarjetaServicio6">
+        <h3 class="tituloTerciario">Potenciación</h3>
+      </div>
+    </div>
+
 </body>
 </html>
