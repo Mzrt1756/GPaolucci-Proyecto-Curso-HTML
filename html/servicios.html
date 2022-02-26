@@ -9,56 +9,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>GPaolucci</title>
 </head>
 <body>
   <header>
-    <nav id="desplegable">
-      <div class="logoMenu"><a class="logoMenu__link" href="../index.html"><img id="logoMenu__link__img" src="../img/Logo.png" alt="logo"></a></div>  
-      <div class="desplegable__menu">
-        <button id="desplegable__menu__boton"> <img src="../img/menuIcono.png" alt="menuIcono"></button>
-        <ul class="desplegable__menu__lista">
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../index.html">Inicio</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../html/nosotros.html">El Equipo</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../html/empresa.html">La Empresa</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../html/clientes.html">Nuestros Clientes</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../html/galeria.html">Galería</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../html/servicios.html">Servicios</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../html/consejos.html">Consejos</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="../html/contacto.html">Contacto</a></li>
-          <li class="desplegable__menu__lista__item"><a class="desplegable__menu__lista__item__link" href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
-        </ul>
-    </nav>
-
-    <nav id="noDesplegable">
-      <ul class="menuLeft">
-        <li class="menuLeft__item"><a class="menuLeft__item__link" href="../index.html">Inicio</a></li>
-        <li class="menuLeft__itemRelative"><p class="menuLeft__itemRelative__link">Nosotros</p> 
-          <ul class="ulAbsolute">
-            <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="../html/empresa.html">La Empresa</a></li>
-            <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="../html/nosotros.html">El Equipo</a></li>
-            <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="../html/clientes.html">Nuestros Clientes</a></li>
-            <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="../html/galeria.html">Galería</a></li>
-            <li class="menuLeft__itemRelative__hover"><a class="menuLeftRelative__item__hover__link" href="../html/terminos.html">Términos y Condiciones</a></li>
+    <nav id="noDesplegable" class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                NOSOTROS
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="empresa.html">La Empresa</a></li>
+                <li><a class="dropdown-item" href="nosotros.html">El Equipo</a></li>
+                <li><a class="dropdown-item" href="clientes.html">Nuestros Clientes</a></li>
+                <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
+                <li><a class="dropdown-item" href="terminos.html">Términos y Condiciones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../img/Logo.png" alt="" width="250" height="45">
+            </a>
+            <li class="nav-item">
+              <a class="nav-link active" href="consejos.html">CONSEJOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.mercadolibre.com.ar/#from=homecom">TIENDA</a>
+            </li>
           </ul>
-        </li>
-        <li class="menuLeft__item"><a class="menuLeft__item__link" href="../html/servicios.html">Servicios</a></li>
-      </ul>
-      <div class="logoMenu"><a class="logoMenu__link" href="../index.html"><img id="logoMenu__link__img" src="../img/Logo.png" alt="logo"></a></div>
-      <ul class="menuRight">  
-        <li class="menuRight__item"><a class="menuRight__item__link" href="../html/consejos.html">Consejos</a></li>
-        <li class="menuRight__item"><a class="menuRight__item__link" href="../html/contacto.html">Contacto</a></li>
-        <li class="menuRight__item"><a class="menuRight__item__link" href="https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
-  </header>
+ </header>
     <main id="mainServicios">
       <div class="tituloPrincipal">
         <hr>
-        <h2>Servicios y Soluciones</h2>
+        <h2 class="animate__animated animate__fadeInLeft">Servicios y Soluciones</h2>
         <hr>  
       </div>
-      <div class="serviciosTarjetaAceite">
+      <div class="serviciosTarjetaAceite" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/cambioaceite.png" alt="cambiodeaceite">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">General</h2>
@@ -69,7 +78,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaEmbrague">
+      <div class="serviciosTarjetaEmbrague" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/cambioEmbrague.png" alt="cambioEmbrague">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Cambio de Embrague</h2>
@@ -80,7 +89,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaInyectores">
+      <div class="serviciosTarjetaInyectores" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/limpieza-de-inyectores3.png" alt="limpiezainyectores">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Inyección Electrónica</h2>
@@ -90,7 +99,7 @@
           </ul>
        </div>
       </div>
-      <div class="serviciosTarjetaMotores">
+      <div class="serviciosTarjetaMotores" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/reparacion-de-motores.png" alt="reparacion-de-motores">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Reparación de Motores</h2>
@@ -101,7 +110,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaChequeo">
+      <div class="serviciosTarjetaChequeo" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/chequeoelectronicogeneral.png" alt="chequeoelectronicp">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Diagnóstico Computarizado</h2>
@@ -111,7 +120,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaFiltro">
+      <div class="serviciosTarjetaFiltro" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/cambiodefiltro.png" alt="cambiodefiltro">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Tradicional</h2>
@@ -122,7 +131,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaFrenos">
+      <div class="serviciosTarjetaFrenos" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/arreglosFrenos.png" alt="frenos">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Frenos</h2>
@@ -134,7 +143,7 @@
           </ul>
         </div>
       </div>
-      <div class="serviciosTarjetaTren">
+      <div class="serviciosTarjetaTren" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
         <img class="serviciosTarjeta__img" src="../img/tren-delantero-1.png" alt="trendelantero">
         <div class="serviciosTarjeta__texto">
           <h2 class="serviciosTarjeta__texto__titulo">Tren Delantero</h2>
@@ -148,39 +157,51 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footerFlex">
-        <div class="logoFooter"><a class="logoFooter__link" href="../index.html"><img id="logoFooter__link__img" src="../img/Logo.png" alt="logo"></a></div>
-        <ul class="infoFooter">
-          <li class="infoFooter__item">GPaolucci Soluciones Automotrices S.R.L.</li>
-          <li class="infoFooter__item">43 n°500 e/149 y 150</li>
-          <li class="infoFooter__item">La Plata, Buenos Aires, Argentina</li>
-          <li class="infoFooter__item">Tel: +54 221 436-2305</li>
-          <li class="infoFooter__item">E-mail: gpaolucci@gmail.com</li>
-          <li class="infoFooter__item">Horarios: Lunes a viernes de 9 a 18hs.//Sábados de 9 a 12hs</li>
+    <footer class="row row-cols-5 py-3 ps-3 m-0 border-top">
+      <div class="center col-md-5">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/Logo.png" alt="" width="75%">
+        </a>
+      </div>
+      <div class="col-md-5 pt-2">
+        <h5>Información de Contacto</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">GPaolucci Soluciones Automotrices S.R.L.</li>
+          <li class="nav-item mb-2">43 n°500 e/149 y 150</li>
+          <li class="nav-item mb-2">La Plata, Buenos Aires, Argentina</li>
+          <li class="nav-item mb-2">Tel: +54 221 436-2305</li>
+          <li class="nav-item mb-2">E-mail: gpaolucci@gmail.com</li>
+          <li class="nav-item mb-2">Horarios: Lunes a viernes de 9 a 18hs.//Sábados de 9 a 12hs</li>
         </ul>
-        <ul class="seccionesFooter">
-          <li class="seccionesFooter__item"><a class="seccionesFooter__item__link" href="../index.html">Inicio</a></li>
-          <li class="seccionesFooter__item"><a href="../html/nosotros.html">Nosotros</a></li>
-          <li class="seccionesFooter__item"><a href="../html/empresa.html">La Empresa</a></li>
-          <li class="seccionesFooter__item"><a href="../html/clientes.html">Clientes</a></li>
-          <li class="seccionesFooter__item"><a href="../html/servicios.html">Servicios</a></li>
-          <li class="seccionesFooter__item"><a href="../html/galeria.html">Galería</a></li>
-          <li class="seccionesFooter__item"><a href="../html/consejos.html">Consejos</a></li>
-          <li class="seccionesFooter__item"><a href="../html/contacto.html">Contacto</a></li>
-          <li class="seccionesFooter__item"><a href="../https://www.mercadolibre.com.ar" target="_blank">Tienda</a></li>
-          <li class="seccionesFooter__item"><a href="../html/terminos.html">Términos y Condiciones</a></li>
+      </div>
+      <div class="col-md-2">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="../index.html" class="nav-link text-white p-0">INICIO</a></li>
+          <li class="nav-item"><a href="../html/nosotros.html" class="nav-link p-0 text-white">EL EQUIPO</a></li>
+          <li class="nav-item"><a href="../html/empresa.html" class="nav-link p-0 text-white">LA EMPRESA</a></li>
+          <li class="nav-item"><a href="../html/clientes.html" class="nav-link p-0 text-white">CLIENTES</a></li>
+          <li class="nav-item"><a href="../html/servicios.html" class="nav-link p-0 text-white">SERVICIOS</a></li>
+          <li class="nav-item"><a href="../html/galeria.html" class="nav-link p-0 text-white">GALERIA</a></li>
+          <li class="nav-item"><a href="../html/consejos.html" class="nav-link p-0 text-white">CONSEJOS</a></li>
+          <li class="nav-item"><a href="../html/contacto.html" class="nav-link p-0 text-white">CONTACTOS</a></li>
+          <li class="nav-item"><a href="https://www.mercadolibre.com.ar/" class="nav-link p-0 text-white">TIENDA</a></li>
+          <li class="nav-item"><a href="../html/terminos.html" class="nav-link p-0 text-white">TÉRMINOS Y CONDICIONES</a></li>
         </ul>
-        <ul class="redesFooter">
-          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="../img/whatsapp.png" alt="Logowhatsapp"></a></li>
-          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://www.instagram.com/gpaolucci_solucion_automotriz/?hl=es-la"><img src="../img/instagram.png" alt="Logoinstagram"></a></li>
-          <li class="redesFooter__item"><a class="redesFooter__item__link" href="https://www.facebook.com/GPaolucci-Mecanica-230450597643866/"><img src="../img/facebook.png" alt="Logofacebook"></a></li>
-        </ul>
-     </div>
-      <div class="wappFlotante"><a href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="../img/whatsapp64.png" alt="Logowhatsapp"></a></div>
-      <hr>
-      <p class="pieFooter_parrafo">©2022 GPaolucci. Todos los derechos reservados. Desarrollado por Facundo Porcel de Peralta.</p>
+      </div>
     </footer>
-
+    <footer class="d-flex flex-wrap justify-content-between align-items-center p-2 border-top">
+      <div class="col-md-8 d-flex align-items-center">
+        <span class="text-muted">©2022 GPaolucci. Todos los derechos reservados.</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="redesFooter__item__link" href="https://api.whatsapp.com/send?phone=542214362305&amp;text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="../img/whatsapp.png" alt="Logowhatsapp"></a></li>
+        <li class="ms-3"><a class="redesFooter__item__link" href="https://www.instagram.com/gpaolucci_solucion_automotriz/?hl=es-la"><img src="../img/instagram.png" alt="Logoinstagram"></a></li>
+        <li class="ms-3"><a class="redesFooter__item__link" href="https://www.facebook.com/GPaolucci-Mecanica-230450597643866/"><img src="../img/facebook.png" alt="Logofacebook"></a></li>
+      </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
