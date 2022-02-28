@@ -27,7 +27,9 @@ footer {
 /*Secciones con distinto Color*/
 
 #servicios,
-#multimarca {
+#multimarca,
+#empresaHistoria2,
+.mainClientesFernanda {
   background-color: rgba(237, 238, 239, 1);
 }
 
@@ -43,4 +45,32 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.spaceAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.equipoTarjeta {
+  width: 18rem;
+}
+
+@media screen and (max-width: 1023px) {
+  #noDesplegable {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #desplegable {
+    display: none;
+  }
 }

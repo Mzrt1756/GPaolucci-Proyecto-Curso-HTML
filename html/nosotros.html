@@ -15,6 +15,33 @@
 </head>
 <body>
   <header>
+    <nav id="desplegable" class="container-fluid border-bottom">
+      <div class="row center">
+            <div class="col dropdown p-2">
+            <a href="#" class="d-flex align-items-center col-lg-4 mb-lg-0 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+              <img src="../img/menuIcono.png" alt="botonMenu">
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
+              <li><a class="dropdown-item active" href="../index.html" aria-current="page">Inicio</a></li>
+              <li><a class="dropdown-item" href="nosotros.html">El Equipo</a></li>
+              <li><a class="dropdown-item" href="empresa.html">La Empresa</a></li>
+              <li><a class="dropdown-item" href="clientes.html">Nuestros Clientes</a></li>
+              <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
+              <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+              <li><a class="dropdown-item" href="consejos.html">Consejos</a></li>
+              <li><a class="dropdown-item" href="https://www.mercadolibre.com.ar">Tienda</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="terminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col p-2 end">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../img/Logo.png" alt="" width="191" height="35">
+            </a>
+          </div>
+      </div>
+    </nav>
     <nav id="noDesplegable" class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         </button>
@@ -57,30 +84,36 @@
     </nav>
  </header>
     <main id="mainEquipo">
-      <hr>
-      <h2>El Equipo</h2>
-      <hr>
-      <p class="equipoTexto">Somos un grupo de tres mecánicos formados en el Centro de Formación Profesional Dardo Rocha: Gianluca, Juan Cruz y Rodrigo. Cada uno de nosotros se ha especializado en diferentes temáticas como la realización de chips de potenciación, diagnóstico computarizado y borrado de fallos, instalación de inyectores programables, entre otras cosas. Los tres hemos dado nuestros primeros pasos dentro de la mecánica formando parte de distintos concesionarios, aportando nuestros conocimientos al mantenimiento de autos usados. Hoy en día nos hemos abierto camino de manera particular, colaborando mutuamente para brindarles un servicio honesto y de calidad.</p>
-      <div class="divEquipo">
-        <div class="tarjetaEquipo1">
-          <img class="tarjetaEquipo__img" src="../img/nosotrosRodri.png" alt="rodrigo">
-          <div class="tarjetaEquipo__mid">
-            <div class="tarjetaEquipo__mid__text">Rodrigo</div>
+      <section id="equipo" class="text-center container">
+        <div class="row-xs"> 
+          <hr>
+          <h2 class="text-center display-8 fw-bold lh-1 mb-3">El Equipo</h2>
+          <hr>
+        </div>
+        <div class="row-xs">              
+          <p class="equipoTexto h4">Somos un grupo de tres mecánicos formados en el Centro de Formación Profesional Dardo Rocha: Gianluca, Juan Cruz y Rodrigo. Cada uno de nosotros se ha especializado en diferentes temáticas como la realización de chips de potenciación, diagnóstico computarizado y borrado de fallos, instalación de inyectores programables, entre otras cosas. Los tres hemos dado nuestros primeros pasos dentro de la mecánica formando parte de distintos concesionarios, aportando nuestros conocimientos al mantenimiento de autos usados. Hoy en día nos hemos abierto camino de manera particular, colaborando mutuamente para brindarles un servicio honesto y de calidad.</p>
+        </div>
+      </section>
+      <section class="spaceAround text-center container">
+        <div class="equipoTarjeta card border-0 p-3">
+          <img src="../img/nosotrosRodri.png" class="card-img-top" alt="rodrigo">
+          <div class="card-body">
+            <h5 class="card-title">Rodrigo</h5>
           </div>
         </div>
-        <div class="tarjetaEquipo2">
-          <img class="tarjetaEquipo__img" src="../img/nosotrosGian.png" alt="gianluca">
-          <div class="tarjetaEquipo__mid">
-            <div class="tarjetaEquipo__mid__text">Gianluca</div>
+        <div class="equipoTarjeta card border-0 p-3">
+          <img src="../img/nosotrosGian.png" class="card-img-top" alt="gianluca">
+          <div class="card-body">
+            <h5 class="card-title">Gianluca</h5>
           </div>
         </div>
-        <div class="tarjetaEquipo3">
-          <img class="tarjetaEquipo__img" src="../img/nosotrosJuan.png" alt="juancruz">
-          <div class="tarjetaEquipo__mid">
-            <div class="tarjetaEquipo__mid__text">Juan Cruz</div>
+        <div class="equipoTarjeta card border-0 p-3">
+          <img src="../img/nosotrosJuan.png" class="card-img-top" alt="juanCruz">
+          <div class="card-body">
+            <h5 class="card-title">Juan Cruz</h5>
           </div>
-        </div>      
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="row row-cols-5 py-3 ps-3 m-0 border-top">
       <div class="center col-md-5">
@@ -124,8 +157,5 @@
         <li class="ms-3"><a class="redesFooter__item__link" href="https://www.facebook.com/GPaolucci-Mecanica-230450597643866/"><img src="../img/facebook.png" alt="Logofacebook"></a></li>
       </ul>
     </footer>
-
-
-
 </body>
 </html>

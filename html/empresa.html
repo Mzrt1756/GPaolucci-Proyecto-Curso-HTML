@@ -15,6 +15,33 @@
 </head>
 <body>
   <header>
+    <nav id="desplegable" class="container-fluid border-bottom">
+      <div class="row center">
+            <div class="col dropdown p-2">
+            <a href="#" class="d-flex align-items-center col-lg-4 mb-lg-0 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+              <img src="../img/menuIcono.png" alt="botonMenu">
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
+              <li><a class="dropdown-item active" href="../index.html" aria-current="page">Inicio</a></li>
+              <li><a class="dropdown-item" href="nosotros.html">El Equipo</a></li>
+              <li><a class="dropdown-item" href="empresa.html">La Empresa</a></li>
+              <li><a class="dropdown-item" href="clientes.html">Nuestros Clientes</a></li>
+              <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
+              <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+              <li><a class="dropdown-item" href="consejos.html">Consejos</a></li>
+              <li><a class="dropdown-item" href="https://www.mercadolibre.com.ar">Tienda</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="terminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col p-2 end">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../img/Logo.png" alt="" width="191" height="35">
+            </a>
+          </div>
+      </div>
+    </nav>
     <nav id="noDesplegable" class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         </button>
@@ -56,39 +83,47 @@
       </div>
     </nav>
  </header>
-    <main>
-      <div class="empresaHistoria">
+    <main id="empresa">
+      <div class="container text-center">
         <hr>
-        <h2>Un poco de historia...</h2>
+        <h2 class="text-center display-8 fw-bold lh-1 mb-3">Un poco de historia...</h2>
         <hr>
-        <div class="empresaHistoria__tarjeta1">
-          <p class="empresaHistoria__tarjeta1__texto">
-            <strong>GPaolucci</strong> es un emprendimiento creado gracias al apoyo de familia y amigos para hacer realidad un sueño de la infancia. Es un taller de mecánica automotriz integral pero también un lugar en donde potenciamos las capacidades de sus vehículos con la responsabilidad y el cuidado que se merece. Este taller tuvo sus inicios en la imaginación de un niño de 6 años que deseaba ser mecánico y poco a poco se fue concretando. </p>
-          <img class="empresaHistoria__tarjeta1__img" src="../img/laempresa1.jpg" alt="fotoEmpresa1">
+      </div>
+      <div class="row spaceAround g-0 mb-3">
+        <div class="col-md-5 px-3">
+          <p class="fs-4"><strong>GPaolucci</strong> es un emprendimiento creado gracias al apoyo de familia y amigos para hacer realidad un sueño de la infancia. Es un taller de mecánica automotriz integral pero también un lugar en donde potenciamos las capacidades de sus vehículos con la responsabilidad y el cuidado que se merece. Este taller tuvo sus inicios en la imaginación de un niño de 6 años que deseaba ser mecánico y poco a poco se fue concretando. </p>
         </div>
-        <div class="empresaHistoria__tarjeta2">
-          <p class="empresaHistoria__tarjeta2__texto">
-            En el año 2018 se establecieron las bases de lo que sería el taller de mecánica integral GPaolucci. Luego de 5 años de esfuerzo y de crecimiento el taller se encuentra casi terminado. El mismo fue completamente pensado y diseñado para que sea funcional a los requerimientos de los mecánicos que allí trabajan y de los clientes, cuidando la calidad en el servicio con cada detalle.</p>
-            <img class="empresaHistoria__tarjeta2__img" src="../img/laempresa2.jpg" alt="fotoEmpresa2">
-        </div>
-        <div class="empresaValores">
-          <h3 class="empresaValores__titulo">Misión</h3>
-          <p class="empresaValores__texto">Atender la necesidad creciente de nuestros clientes para lograr una eficiente reparacion en los vehiculos.</p>
-          <hr>
-          <h3 class="empresaValores__titulo">Visión</h3>
-          <p class="empresaValores__texto">Ser líderes en las tareas que realizamos, asumiendo un compromiso con el medio ambiente, nuestros empleados, nuestros accionistas y nuestros clientes.</p>
-          <hr>
-          <h3 class="empresaValores__titulo">Valores</h3>
-          <ul class="empresaValores__lista">
-            <li>Nuestra palabra vale.</li>
-            <li>Somos solidarios</li>
-            <li>Nos comprometemos con la comunidad</li>
-            <li>Nos preocupamos por el cliente</li>
-            <li>Ayudamos al medio ambiente</li>
-            <li>Hechos no palabras</li>
-          </ul>
+        <div class="col-md-5">
+          <img id="empresaFoto" class="img-fluid" src="../img/laempresa1.jpg" alt="fotoEmpresa1" >
         </div>
       </div>
+      <div id="empresaHistoria2" class="row spaceAround g-0">
+        <div class="col-md-5">
+        <img id="empresaFoto" class="img-fluid my-3" src="../img/laempresa2.jpg" alt="fotoEmpresa2" >
+        </div>
+        <div class="col-md-5 p-3 text-end">
+          <p class="fs-4">En el año 2018 se establecieron las bases de lo que sería el taller de mecánica integral GPaolucci. Luego de 5 años de esfuerzo y de crecimiento el taller se encuentra casi terminado. El mismo fue completamente pensado y diseñado para que sea funcional a los requerimientos de los mecánicos que allí trabajan y de los clientes, cuidando la calidad en el servicio con cada detalle. </p>
+        </div>
+      </div>         
+    </div>
+    <div class="text-center my-3">
+      <h2>Misión</h2>
+      <p class="fs-5 px-3">Atender la necesidad creciente de nuestros clientes para lograr una eficiente reparacion en los vehiculos.</p>
+      <hr>
+      <h2>Visión</h2>
+      <p class="fs-5 px-3">Ser líderes en las tareas que realizamos, asumiendo un compromiso con el medio ambiente, nuestros empleados, nuestros accionistas y nuestros clientes.</p>
+      <hr>
+      <h2>Valores</h2>
+      <ul class="fs-5 list-unstyled">
+        <li>Nuestra palabra vale.</li>
+        <li>Somos solidarios</li>
+        <li>Nos comprometemos con la comunidad</li>
+        <li>Nos preocupamos por el cliente</li>
+        <li>Ayudamos al medio ambiente</li>
+        <li>Hechos no palabras</li>
+      </ul>
+    </div>
+
     </main>
     <footer class="row row-cols-5 py-3 ps-3 m-0 border-top">
       <div class="center col-md-5">
