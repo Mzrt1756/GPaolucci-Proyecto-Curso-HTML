@@ -84,73 +84,63 @@
     </nav>
  </header>
     <main id="mainContacto">
-      <div class="divContacto">
-        <div class="contacto1">
-          <h2>CONTACTANOS</h2>
-          <hr>
-          <p class="contacto1__texto">GPaolucci Soluciones Automotrices S.R.L.</p>
-          <p class="contacto1__texto">43 n°500 e/149 y 150</p>
-          <p class="contacto1__texto">La Plata, Buenos Aires, Argentina</p>
-          <p class="contacto1__texto">Tel: +54 221 436-2305</p>
-          <p class="contacto1__texto">E-mail: gpaolucci@gmail.com</p>
-          <p class="contacto1__texto">Horarios: Lunes a viernes de 9 a 18hs.//Sábados de 9 a 12hs.</p>
-          <h3>Redes Sociales</h3>
-          <ul class="contacto1__redes">
-            <li class="redesFooter__item"><a href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="../img/whatsapp-48.png" alt="Logowhatsapp"></a></li>
-            <li class="redesFooter__item"><a href="https://www.instagram.com/gpaolucci_solucion_automotriz/?hl=es-la"><img src="../img/instagram-48.png" alt="Logoinstagram"></a></li>
-            <li class="redesFooter__item"><a href="https://www.facebook.com/GPaolucci-Mecanica-230450597643866/"><img src="../img/facebook-3-48.png" alt="Logofacebook"></a></li>
-          </ul>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col border border-2 rounded-3 m-3 p-3 text-center">
+            <div class="container text-center">
+              <h2 class="text-center display-8 fw-bold lh-1 mb-3">CONTACTANOS</h2>
+              <hr>
+            </div>
+            <p class="fs-3">GPaolucci Soluciones Automotrices S.R.L.</p>
+            <p class="fs-5">43 n°500 e/149 y 150</p>
+            <p class="fs-5">La Plata, Buenos Aires, Argentina</p>
+            <p class="fs-5">Tel: +54 221 436-2305</p>
+            <p class="fs-5">E-mail: gpaolucci@gmail.com</p>
+            <p class="fs-5">Horarios: Lunes a viernes de 9 a 18hs.//Sábados de 9 a 12hs.</p>
+            <h3>Redes Sociales</h3>
+            <ul class="nav col center">
+              <li class="p-2"><a href="https://api.whatsapp.com/send?phone=542214362305&text=Hola%2C%20para%20realizar%20una%20consulta%20mecánica%20sobre..."><img src="../img/whatsapp-48.png" alt="Logowhatsapp"></a></li>
+              <li class="p-2"><a href="https://www.instagram.com/gpaolucci_solucion_automotriz/?hl=es-la"><img src="../img/instagram-48.png" alt="Logoinstagram"></a></li>
+              <li class="p-2"><a href="https://www.facebook.com/GPaolucci-Mecanica-230450597643866/"><img src="../img/facebook-3-48.png" alt="Logofacebook"></a></li>
+            </ul>
+          </div>
+          <div class="col border border-2 rounded-3 m-3 p-3">
+            <div class="container text-center">
+              <h3 class="text-center fw-bold lh-1 mb-3">HACENOS TU CONSULTA O PEDI TU PRESUPUESTO PERSONALIZADO</h3>
+              <hr>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="nombreLabel" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombreLabel" aria-describedby="nombreHelp">
+                <div id="nombreHelp" class="form-text">Escriba aquí su nombre y apellido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="telefonoLabel" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefonoLabel" aria-describedby="telefonoHelp">
+                <div id="telefonoHelp" class="form-text">Escriba aquí su número de teléfono.</div>
+              </div>
+              <div class="mb-3">
+                <label for="emailLabel" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailLabel" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Escriba aquí su email.</div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terminosCheck">
+                <label class="form-check-label" for="terminosCheck">Confirma que ha leído los <a class="link-dark" href="terminos.html"><strong>términos y condiciones</strong></a>.</label>
+              </div>
+              <button type="submit" class="btn btn-primary m-2">Enviar consulta</button>
+              <button type="reset" class="btn btn-primary m-2">Limpiar Formulario</button>
+            </form>
+          </div>
         </div>
-        <div class="contacto2">
-          <h3 class="contacto2__titulo">HACENOS TU CONSULTA O PEDI TU PRESUPUESTO PERSONALIZADO</h3>
-          <hr>
-          <form class="contacto2__form" action="">
-              <div class="contacto2__nombre">
-                <div class="columna1">
-                  <label for="nombre">Nombre y Apellido</label>
-                </div>
-                <div class="columna2">
-                  <input type="text" placeholder="Escriba aquí su nombre.">
-                </div>
-              </div>
-              <div class="contacto2__telefono">
-                <div class="columna1">
-                  <label for="telefono">Teléfono</label>
-                </div>
-                <div class="columna2">
-                  <input type="text" placeholder="Escriba aquí su teléfono.">
-                </div>
-              </div>
-              <div class="contacto2__mail">
-                <div class="columna1">
-                  <label for="email">E-mail</label>
-                </div>
-                <div class="columna2">
-                  <input type="email" placeholder="Escriba aquí su E-mail.">
-                </div>
-              </div>
-              <div class="contacto2__mensaje">
-                <div class="columna1">
-                  <label for="mensaje">Mensaje</label>
-                </div>
-                <div class="columna2">
-                  <textarea name="mensaje" id="mensaje" placeholder="Quisiera solicitar información sobre..."></textarea>
-                </div>
-              </div>
-              <div class="contacto2__terminos">
-                <input type="checkbox" value="aceptar-terminos-y-condiciones">
-                <label for="terminosycondiciones">Acepto <a href="terminos.html">Términos y Condiciones</a></label>
-              </div>
-              <div class="contacto2__inputs">
-                <input type="submit" value="Enviar Consulta">
-                <input type="reset" value="Limpiar Formulario">
-              </div>
-          </form>
-        </div>
-        <div class="ubicacionContacto">
+      </div>
+      <div class="ubicacionContacto container-fluid text-center">
+        <div class="pt-3">
           <h2>¿Dónde encontrarnos?</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.7836789013456!2d-58.00016173271613!3d-34.94985512292458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e9f1e03fcabf%3A0x77fd1ffb977087d0!2sGPAOLUCCI-MECANICA!5e0!3m2!1ses-419!2sar!4v1643414774619!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <hr>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.7836789013456!2d-58.00016173271613!3d-34.94985512292458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e9f1e03fcabf%3A0x77fd1ffb977087d0!2sGPAOLUCCI-MECANICA!5e0!3m2!1ses-419!2sar!4v1643414774619!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </main>
     <footer class="row row-cols-1 row-cols-lg-3 py-3 px-3 m-0 border-top justify-content-between">

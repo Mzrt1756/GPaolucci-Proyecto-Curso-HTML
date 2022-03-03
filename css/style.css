@@ -24,23 +24,6 @@ footer {
   justify-content: space-around;
 }
 
-/*Secciones con distinto Color*/
-
-#servicios,
-#multimarca,
-#empresaHistoria2,
-.mainClientesFernanda {
-  background-color: rgba(237, 238, 239, 1);
-}
-
-/*Index.html*/
-
-.serviciosImagen,
-.multimarcaImg {
-  width: 7rem;
-  margin-bottom: 1rem;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -59,6 +42,23 @@ footer {
   justify-content: end;
 }
 
+/*Secciones con distinto Color*/
+
+#servicios,
+#multimarca,
+#empresaHistoria2,
+.mainClientesFernanda, .containerCarousel,.ubicacionContacto {
+  background-color: rgba(237, 238, 239, 1);
+}
+
+/*Index.html*/
+
+.serviciosImagen,
+.multimarcaImg {
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
 .empresaFoto {
   max-width: 300px;
 }
@@ -66,6 +66,11 @@ footer {
 .equipoTarjeta {
   width: 18rem;
 }
+
+.carousel-inner img{
+   margin:auto; 
+   width: 500px;
+  }
 
 @media screen and (max-width: 1023px) {
   #noDesplegable {
@@ -88,6 +93,11 @@ footer {
   .galeriaImg:hover {
     transform: scale(1.1);
   }
+
+  .carousel-inner img{
+    margin:auto; 
+    width: 300px;
+   }
 }
 
 @media screen and (min-width: 1024px) {
@@ -112,4 +122,5 @@ footer {
   .galeriaImg:hover {
     transform: scale(1.1);
   }
+
 }
