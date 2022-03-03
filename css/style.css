@@ -59,6 +59,10 @@ footer {
   justify-content: end;
 }
 
+.empresaFoto {
+  max-width: 300px;
+}
+
 .equipoTarjeta {
   width: 18rem;
 }
@@ -67,10 +71,45 @@ footer {
   #noDesplegable {
     display: none;
   }
+
+  .equipoTarjetaImg {
+    max-width: 400px;
+  }
+
+  .galeriaImg {
+    max-height: 330px;
+    object-fit: cover;
+    border: 2px solid white;
+    transition: transform 0.2s;
+    border-radius: 5px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.75);
+  }
+
+  .galeriaImg:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (min-width: 1024px) {
   #desplegable {
     display: none;
+  }
+
+  .equipoTarjetaImg {
+    max-width: 500px;
+  }
+
+  .galeriaImg {
+    min-height: 325px;
+    max-height: 430px;
+    object-fit: cover;
+    border: 2px solid white;
+    transition: transform 0.2s;
+    border-radius: 5px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.75);
+  }
+
+  .galeriaImg:hover {
+    transform: scale(1.1);
   }
 }
