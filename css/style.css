@@ -42,6 +42,7 @@ footer {
   justify-content: end;
 }
 
+
 /*Secciones con distinto Color*/
 
 #servicios,
@@ -51,7 +52,7 @@ footer {
   background-color: rgba(237, 238, 239, 1);
 }
 
-/*Index.html*/
+/*INDEX.HTML*/
 
 .serviciosImagen,
 .multimarcaImg {
@@ -72,14 +73,33 @@ footer {
    width: 500px;
   }
 
+  /*CONSEJOS.HTML*/
+ 
+  .accordion-button:not(.collapsed) {
+    color: rgba(252, 252, 252, 1);
+    background-color: rgba(13, 13, 13, 0.9);
+  }
+
+  .accordion-button:not(.collapsed)::after{
+    filter: brightness(0%) invert(70%);
+  }
+
+  .accordion-button:focus{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  }
+
 @media screen and (max-width: 1023px) {
   #noDesplegable {
     display: none;
   }
 
+  /*NOSOTROS.HTML*/
+
   .equipoTarjetaImg {
     max-width: 400px;
   }
+
+  /*GALERIA.HTML*/
 
   .galeriaImg {
     max-height: 330px;
@@ -98,6 +118,13 @@ footer {
     margin:auto; 
     width: 300px;
    }
+
+   /*CONSEJOS.HTML*/
+
+   .accordion-button{
+    font-size: 16px;
+    border: 2px solid black;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -105,9 +132,13 @@ footer {
     display: none;
   }
 
+  /*NOSOTROS.HTML*/
+
   .equipoTarjetaImg {
     max-width: 500px;
   }
+
+  /*GALERIA.HTML*/
 
   .galeriaImg {
     min-height: 325px;
@@ -121,6 +152,12 @@ footer {
 
   .galeriaImg:hover {
     transform: scale(1.1);
+  }
+
+  /*CONSEJOS.HTML*/
+  
+  .accordion-button{
+    font-size: 22px;
   }
 
 }
