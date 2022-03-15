@@ -1,0 +1,170 @@
+@import "variables";
+@import "mixins";
+
+/*Colores: rgba(13, 13, 13, 1); negro fondo
+rgba(252, 252, 252, 1); blanco fondo
+rgba(227, 6, 19, 0.85); rojo botones
+rgba(237, 238, 239, 1); gris fondo
+rgba( 227, 6, 19,1) rojo puro
+rgba(126,126,126,1) gris botones
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .center {
+    @include flex-center;
+  }
+  
+  .spaceAround {
+    @include flex-spaceAround;
+  }
+  
+  .end {
+    @include flex-end;
+  }
+  
+  body {
+    font-family: $font-family !important;
+    width: 100%;
+  }
+  
+  footer {
+    background-color: $bg-color-primario;
+    color: $font-color-nav;
+  }
+
+  nav{
+    @extend footer;
+    font-size: 23px;
+    font-weight: bold;
+    }
+    
+  .navbar-nav {
+    @include flex-spaceAround;
+    width: 100%;
+  }
+
+  
+  /*Secciones con distinto Color*/
+  
+  #servicios,
+  #multimarca,
+  #empresaHistoria2,
+  .mainClientesFernanda, .containerCarousel,.ubicacionContacto {
+    background-color: $bg-color-secundario;
+  }
+  
+  /*INDEX.HTML*/
+  
+  .serviciosImagen,
+  .multimarcaImg {
+    width: 7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .empresaFoto {
+    max-width: 300px;
+  }
+  
+  .equipoTarjeta {
+    width: 18rem;
+  }
+  
+  .carousel-inner img{
+     margin:auto; 
+     width: 500px;
+    }
+  
+    /*CONSEJOS.HTML*/
+   
+    .accordion-button{
+      &:not(.collapsed) {
+        color: $font-color-nav;
+        background-color: $bg-color-primario;
+      }
+    
+      &:not(.collapsed)::after{
+        filter: brightness(0%) invert(70%);
+      }
+    
+      &:focus{
+        box-shadow: $box-shadows;
+      }
+    }
+  
+  @media screen and (max-width: 1023px) {
+    
+    #noDesplegable {
+      display: none;
+    }
+  
+    /*NOSOTROS.HTML*/
+  
+    .equipoTarjetaImg {
+      max-width: 400px;
+    }
+  
+    /*GALERIA.HTML*/
+  
+    .galeriaImg {
+      @include galeria-img;
+      max-height: 330px; 
+    }
+  
+    .carousel-inner img{
+      margin:auto; 
+      width: 300px;
+     }
+  
+     /*CONSEJOS.HTML*/
+  
+     .accordion{
+      &-item{
+        font-size: map-get($accordion-style, fuenteTablet);
+      }
+      &-button{
+        font-size: map-get($accordion-style, fuenteBotonTablet);
+        border: map-get($accordion-style , borde );
+      }
+      
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    #desplegable {
+      display: none;
+    }
+  
+    /*NOSOTROS.HTML*/
+  
+    .equipoTarjetaImg {
+      max-width: 500px;
+    }
+  
+    /*GALERIA.HTML*/
+  
+    .galeriaImg {
+      @include galeria-img;
+      min-height: 325px;
+      max-height: 430px;        
+    }
+
+  
+    /*CONSEJOS.HTML*/
+    
+    .accordion{
+      &-item{
+        font-size: map-get($accordion-style, fuenteDesktop);
+      }
+      &-button{
+        font-size: map-get($accordion-style, fuenteBotonDesktop);
+        border: map-get($accordion-style , borde );
+      }
+    }
+   
+  
+  }
+  
