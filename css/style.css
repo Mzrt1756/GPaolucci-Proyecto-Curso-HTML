@@ -55,12 +55,7 @@ nav {
   width: 7rem;
   margin-bottom: 1rem; }
 
-.empresaFoto {
-  max-width: 300px; }
-
-.equipoTarjeta {
-  width: 18rem; }
-
+/*GALERIA.HTML*/
 .carousel-inner img {
   margin: auto;
   width: 500px; }
@@ -80,8 +75,16 @@ nav {
   #noDesplegable {
     display: none; }
   /*NOSOTROS.HTML*/
-  .equipoTarjetaImg {
-    max-width: 400px; }
+  .divEquipo {
+    max-width: 400px; } }
+  @media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+    .divEquipo {
+      max-width: 100%; } }
+
+@media screen and (max-width: 1023px) {
+  /*EMPRESA.HTML*/
+  .colEmpresa {
+    max-width: 600px; }
   /*GALERIA.HTML*/
   .galeriaImg {
     object-fit: cover;
@@ -105,9 +108,6 @@ nav {
 @media screen and (min-width: 1024px) {
   #desplegable {
     display: none; }
-  /*NOSOTROS.HTML*/
-  .equipoTarjetaImg {
-    max-width: 500px; }
   /*GALERIA.HTML*/
   .galeriaImg {
     object-fit: cover;
@@ -115,7 +115,7 @@ nav {
     border: 2px solid white;
     border-radius: 5px;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75);
-    min-height: 325px;
+    min-height: 330px;
     max-height: 430px; }
     .galeriaImg:hover {
       transform: scale(1.1); }

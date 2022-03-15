@@ -28,23 +28,23 @@ rgba(126,126,126,1) gris botones
   
   body {
     font-family: $font-family !important;
-    width: 100%;
+    width: map-get($width-style, w-100);
   }
   
   footer {
     background-color: $bg-color-primario;
-    color: $font-color-nav;
+    color: map-get($font-style, fontColorFooter);
   }
 
   nav{
     @extend footer;
-    font-size: 23px;
-    font-weight: bold;
+    font-size: map-get($font-style, fontSizeNav);
+    font-weight: map-get($font-style, fontWeightNav);
     }
     
   .navbar-nav {
     @include flex-spaceAround;
-    width: 100%;
+    width: map-get($width-style, w-100);
   }
 
   
@@ -61,28 +61,22 @@ rgba(126,126,126,1) gris botones
   
   .serviciosImagen,
   .multimarcaImg {
-    width: 7rem;
+    width: map-get($width-style, widthIndexImg);
     margin-bottom: 1rem;
   }
   
-  .empresaFoto {
-    max-width: 300px;
-  }
-  
-  .equipoTarjeta {
-    width: 18rem;
-  }
-  
+  /*GALERIA.HTML*/
+
   .carousel-inner img{
      margin:auto; 
-     width: 500px;
+     width: map-get($width-style, widthCarouselDesktop);
     }
   
     /*CONSEJOS.HTML*/
    
     .accordion-button{
       &:not(.collapsed) {
-        color: $font-color-nav;
+        color: map-get($font-style, fontColorFooter);
         background-color: $bg-color-primario;
       }
     
@@ -102,31 +96,40 @@ rgba(126,126,126,1) gris botones
     }
   
     /*NOSOTROS.HTML*/
-  
-    .equipoTarjetaImg {
-      max-width: 400px;
+    
+    .divEquipo{
+      max-width: map-get($width-style, widthDivEquipoTablet);
+      @media screen and (min-width: 768px) and (max-width: 1023px){
+        max-width: map-get($width-style, w-100);
+      }
     }
-  
+
+    /*EMPRESA.HTML*/
+
+    .colEmpresa{
+      max-width: map-get($width-style, widthColEmpresa);
+    }
+
     /*GALERIA.HTML*/
   
     .galeriaImg {
       @include galeria-img;
-      max-height: 330px; 
+      max-height: map-get($height-style, heightGalTablet);
     }
   
     .carousel-inner img{
       margin:auto; 
-      width: 300px;
+      width: map-get($width-style, widthCarouselTablet);
      }
   
      /*CONSEJOS.HTML*/
   
      .accordion{
       &-item{
-        font-size: map-get($accordion-style, fuenteTablet);
+        font-size: map-get($accordion-style, sizeFuenteTablet);
       }
       &-button{
-        font-size: map-get($accordion-style, fuenteBotonTablet);
+        font-size: map-get($accordion-style, sizeBotonTablet);
         border: map-get($accordion-style , borde );
       }
       
@@ -138,29 +141,22 @@ rgba(126,126,126,1) gris botones
       display: none;
     }
   
-    /*NOSOTROS.HTML*/
-  
-    .equipoTarjetaImg {
-      max-width: 500px;
-    }
-  
     /*GALERIA.HTML*/
   
     .galeriaImg {
       @include galeria-img;
-      min-height: 325px;
-      max-height: 430px;        
+      min-height: map-get($height-style, heightGalTablet);
+      max-height: map-get($height-style, maxHeightGalDesktop);       
     }
-
   
     /*CONSEJOS.HTML*/
     
     .accordion{
       &-item{
-        font-size: map-get($accordion-style, fuenteDesktop);
+        font-size: map-get($accordion-style, sizeFuenteDesktop);
       }
       &-button{
-        font-size: map-get($accordion-style, fuenteBotonDesktop);
+        font-size: map-get($accordion-style, sizeBotonDesktop);
         border: map-get($accordion-style , borde );
       }
     }
