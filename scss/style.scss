@@ -47,7 +47,9 @@ rgba(126,126,126,1) gris botones
     width: map-get($width-style, w-100);
   }
 
-  
+  a.active, a:active { 
+    background-color: $bg-color-primario !important; 
+  }
   /*Secciones con distinto Color*/
   
   #servicios,
@@ -86,7 +88,7 @@ rgba(126,126,126,1) gris botones
     
       &:focus{
         box-shadow: $box-shadows;
-        border-color: map-get($accordion-style , bordeColorFocus );
+        border-color: map-get($accordion-style , bordeColorFocus);
       }
     }
   
