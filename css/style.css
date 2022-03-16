@@ -69,7 +69,8 @@ nav {
   filter: brightness(0%) invert(70%); }
 
 .accordion-button:focus {
-  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75); }
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75);
+  border-color: rgba(13, 13, 13, 0.5); }
 
 @media screen and (max-width: 1023px) {
   #noDesplegable {

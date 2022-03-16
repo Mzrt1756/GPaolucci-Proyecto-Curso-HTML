@@ -86,6 +86,7 @@ rgba(126,126,126,1) gris botones
     
       &:focus{
         box-shadow: $box-shadows;
+        border-color: map-get($accordion-style , bordeColorFocus );
       }
     }
   
