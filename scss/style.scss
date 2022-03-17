@@ -50,6 +50,11 @@ rgba(126,126,126,1) gris botones
   a.active, a:active { 
     background-color: $bg-color-primario !important; 
   }
+
+  .btn{
+    box-shadow: $box-shadows;
+  }
+
   /*Secciones con distinto Color*/
   
   #servicios,

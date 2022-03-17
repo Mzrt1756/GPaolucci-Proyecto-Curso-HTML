@@ -45,6 +45,9 @@ nav {
 a.active, a:active {
   background-color: #0d0d0d !important; }
 
+.btn {
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75); }
+
 /*Secciones con distinto Color*/
 #servicios,
 #multimarca,
