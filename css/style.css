@@ -61,6 +61,10 @@ a.active, a:active {
   width: 7rem;
   margin-bottom: 1rem; }
 
+/*NOSOTROS.HTML*/
+.equipoTarjetaImg {
+  max-width: 450px; }
+
 /*GALERIA.HTML*/
 .carousel-inner img {
   margin: auto;
@@ -78,17 +82,13 @@ a.active, a:active {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75);
   border-color: rgba(13, 13, 13, 0.5); }
 
+/*CONTACTO.HTML*/
+.colForm {
+  height: 620px; }
+
 @media screen and (max-width: 1023px) {
   #noDesplegable {
     display: none; }
-  /*NOSOTROS.HTML*/
-  .divEquipo {
-    max-width: 400px; } }
-  @media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-    .divEquipo {
-      max-width: 100%; } }
-
-@media screen and (max-width: 1023px) {
   /*EMPRESA.HTML*/
   .colEmpresa {
     max-width: 600px; }

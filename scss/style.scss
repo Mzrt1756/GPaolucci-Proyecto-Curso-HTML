@@ -71,6 +71,12 @@ rgba(126,126,126,1) gris botones
     width: map-get($width-style, widthIndexImg);
     margin-bottom: 1rem;
   }
+
+  /*NOSOTROS.HTML*/
+
+  .equipoTarjetaImg{
+    max-width: map-get($width-style , maxWidthEquipoImg );
+  }
   
   /*GALERIA.HTML*/
 
@@ -97,19 +103,16 @@ rgba(126,126,126,1) gris botones
       }
     }
   
+    /*CONTACTO.HTML*/
+
+    .colForm{
+      height: map-get($height-style, heightForm);
+    }
+
   @media screen and (max-width: 1023px) {
     
     #noDesplegable {
       display: none;
-    }
-  
-    /*NOSOTROS.HTML*/
-    
-    .divEquipo{
-      max-width: map-get($width-style, widthDivEquipoTablet);
-      @media screen and (min-width: 768px) and (max-width: 1023px){
-        max-width: map-get($width-style, w-100);
-      }
     }
 
     /*EMPRESA.HTML*/
